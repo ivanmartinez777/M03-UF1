@@ -3,6 +3,8 @@
     Dim op2 As Integer = 0
     Dim resultado As Integer = 0
 
+    'cambio para hacer commit
+
     Private Sub DividirBtn_Click(sender As Object, e As EventArgs) Handles DividirBtn.Click
         op1 = CInt(TextBox1.Text)
         op2 = CInt(TextBox2.Text)
