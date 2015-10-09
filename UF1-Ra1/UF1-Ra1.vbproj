@@ -72,6 +72,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExpresionesBooleanas.Designer.vb">
+      <DependentUpon>ExpresionesBooleanas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ExpresionesBooleanas.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -94,20 +98,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="practica 1.Designer.vb">
-      <DependentUpon>practica 1.vb</DependentUpon>
-    </Compile>
-    <Compile Include="practica 1.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="yoquese.Designer.vb">
-      <DependentUpon>yoquese.vb</DependentUpon>
-    </Compile>
-    <Compile Include="yoquese.vb">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ExpresionesBooleanas.resx">
+      <DependentUpon>ExpresionesBooleanas.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -116,9 +111,6 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="yoquese.resx">
-      <DependentUpon>yoquese.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
