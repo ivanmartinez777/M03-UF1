@@ -94,6 +94,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="yoquese.Designer.vb">
+      <DependentUpon>yoquese.vb</DependentUpon>
+    </Compile>
+    <Compile Include="yoquese.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
@@ -104,6 +110,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yoquese.resx">
+      <DependentUpon>yoquese.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
