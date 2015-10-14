@@ -12,7 +12,7 @@
         If n1 < n2 And n2 < n3 Then
             result = "          " + n1.ToString() + "          " + n2.ToString + "          " + n3.ToString
             MessageBox.Show(result)
-
+            dsdfsd
 
         End If
 
