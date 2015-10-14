@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class Calculadora
     Dim op1 As Integer = 0
     Dim op2 As Integer = 0
     Dim resultado As Integer = 0
@@ -58,7 +58,6 @@
 
 
     End Sub
-
 
 
 End Class

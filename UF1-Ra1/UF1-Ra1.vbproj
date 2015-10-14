@@ -72,15 +72,22 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ExpresionesBooleanas.Designer.vb">
-      <DependentUpon>ExpresionesBooleanas.vb</DependentUpon>
+    <Compile Include="Booleano3.Designer.vb">
+      <DependentUpon>Booleano3.vb</DependentUpon>
     </Compile>
-    <Compile Include="ExpresionesBooleanas.vb" />
-    <Compile Include="Form1.vb">
+    <Compile Include="Booleano3.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="calculadora.Designer.vb">
+      <DependentUpon>calculadora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="calculadora.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -100,11 +107,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ExpresionesBooleanas.resx">
-      <DependentUpon>ExpresionesBooleanas.vb</DependentUpon>
+    <EmbeddedResource Include="Booleano3.resx">
+      <DependentUpon>Booleano3.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="calculadora.resx">
+      <DependentUpon>calculadora.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
