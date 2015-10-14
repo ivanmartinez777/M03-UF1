@@ -105,6 +105,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Ordenaymuestra.Designer.vb">
+      <DependentUpon>Ordenaymuestra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ordenaymuestra.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Booleano3.resx">
@@ -121,6 +127,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ordenaymuestra.resx">
+      <DependentUpon>Ordenaymuestra.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
