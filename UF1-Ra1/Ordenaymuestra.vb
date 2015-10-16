@@ -12,7 +12,26 @@
         If n1 < n2 And n2 < n3 Then
             result = "          " + n1.ToString() + "          " + n2.ToString + "          " + n3.ToString
             MessageBox.Show(result)
-            dsdfsd
+        End If
+
+        If n1 < n2 And n3 < n2 Then
+            result = "          " + n1.ToString() + "          " + n3.ToString + "          " + n2.ToString
+        End If
+
+        If n2 < n1 And n1 < n3 Then
+            result = "          " + n2.ToString() + "          " + n1.ToString + "          " + n3.ToString
+        End If
+
+        If n2 < n1 And n3 < n1 Then
+            result = "          " + n2.ToString() + "          " + n3.ToString + "          " + n1.ToString
+        End If
+
+        If n3 < n1 And n1 < n2 Then
+            result = "          " + n3.ToString() + "          " + n1.ToString + "          " + n2.ToString
+
+
+        Else
+                            result = "          " + n3.ToString() + "          " + n2.ToString + "          " + n1.ToString
 
         End If
 
