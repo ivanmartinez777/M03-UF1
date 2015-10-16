@@ -10,28 +10,31 @@
         n3 = CInt(textbox3.Text)
 
         If n1 < n2 And n2 < n3 Then
+
             result = "          " + n1.ToString() + "          " + n2.ToString + "          " + n3.ToString
             MessageBox.Show(result)
-        End If
-
-        If n1 < n2 And n3 < n2 Then
+        ElseIf n1 < n3 And n3 < n2 Then
             result = "          " + n1.ToString() + "          " + n3.ToString + "          " + n2.ToString
-        End If
-
-        If n2 < n1 And n1 < n3 Then
+            '132
+            MessageBox.Show(result)
+        ElseIf n2 < n1 And n1 < n3 Then
             result = "          " + n2.ToString() + "          " + n1.ToString + "          " + n3.ToString
-        End If
-
-        If n2 < n1 And n3 < n1 Then
-            result = "          " + n2.ToString() + "          " + n3.ToString + "          " + n1.ToString
-        End If
-
-        If n3 < n1 And n1 < n2 Then
+            '213
+            MessageBox.Show(result)
+        ElseIf n3 < n1 And n1 < n2 Then
             result = "          " + n3.ToString() + "          " + n1.ToString + "          " + n2.ToString
-
+            '231
+            MessageBox.Show(result)
+        ElseIf n2 < n3 And n3 < n1 Then
+            result = "          " + n2.ToString() + "          " + n3.ToString + "          " + n1.ToString
+            '312
+            MessageBox.Show(result)
 
         Else
-                            result = "          " + n3.ToString() + "          " + n2.ToString + "          " + n1.ToString
+
+            result = "          " + n3.ToString() + "          " + n2.ToString + "          " + n1.ToString
+            '321
+            MessageBox.Show(result)
 
         End If
 
