@@ -84,6 +84,12 @@
     <Compile Include="calculadora.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Ejercicio_2.Designer.vb">
+      <DependentUpon>Ejercicio_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicio_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form2.Designer.vb">
       <DependentUpon>Form2.vb</DependentUpon>
     </Compile>
@@ -130,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="calculadora.resx">
       <DependentUpon>calculadora.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ejercicio_2.resx">
+      <DependentUpon>Ejercicio_2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
