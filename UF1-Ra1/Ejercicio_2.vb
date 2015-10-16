@@ -10,6 +10,7 @@
         n2 = CInt(TextBox2.Text)
 
         If n1 Mod n2 = 0 Then
+            'Mod es una operación que indica si, al dividir un numero, el resto es 0
             MessageBox.Show("Es divisible")
         Else
             MessageBox.Show("No es divisible")
