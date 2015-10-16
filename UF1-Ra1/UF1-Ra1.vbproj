@@ -111,6 +111,12 @@
     <Compile Include="Ordenaymuestra.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Aleatorio.Designer.vb">
+      <DependentUpon>Aleatorio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Aleatorio.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Booleano3.resx">
@@ -130,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ordenaymuestra.resx">
       <DependentUpon>Ordenaymuestra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aleatorio.resx">
+      <DependentUpon>Aleatorio.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
