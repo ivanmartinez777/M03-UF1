@@ -117,6 +117,12 @@
     <Compile Include="Aleatorio.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="tablamultiplicar.Designer.vb">
+      <DependentUpon>tablamultiplicar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tablamultiplicar.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Booleano3.resx">
@@ -139,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Aleatorio.resx">
       <DependentUpon>Aleatorio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tablamultiplicar.resx">
+      <DependentUpon>tablamultiplicar.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
