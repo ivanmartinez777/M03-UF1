@@ -15,6 +15,9 @@
             dias = 28
         ElseIf mes <> 2 And mes Mod 2 <> 0 And mes <= 7 Then
             dias = 31
+
+        ElseIf mes <> 2 And mes Mod 2 = 0 And mes > 7 Then
+            dias = 31
         Else
             dias = 30
 
