@@ -126,6 +126,12 @@
     <Compile Include="Ejercicio_8.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Ejercicio_9.Designer.vb">
+      <DependentUpon>Ejercicio_9.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicio_9.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form2.Designer.vb">
       <DependentUpon>Form2.vb</DependentUpon>
     </Compile>
@@ -193,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ejercicio_8.resx">
       <DependentUpon>Ejercicio_8.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ejercicio_9.resx">
+      <DependentUpon>Ejercicio_9.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
