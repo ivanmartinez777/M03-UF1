@@ -40,4 +40,8 @@
         End If
         MessageBox.Show(result)
     End Sub
+
+    Private Sub textbox1_TextChanged(sender As Object, e As EventArgs) Handles textbox1.TextChanged
+
+    End Sub
 End Class
