@@ -12,15 +12,28 @@
         n3 = CInt(TextBox3.Text)
 
 
-        If n1 > n2 And n1 < n3 Then
+        If n1 > n2 And n2 > n3 Then
             resultmax = n1.ToString
-        ElseIf n2 < n1 And n2 < n3 Then
+        ElseIf n1 < n2 And n2 > n3 Then
             resultmax = n2.ToString
         Else
             resultmax = n3.ToString
         End If
-        Label1.Text = resultmax.ToString()
-        Label2.Text = resultmin.ToString()
+        Label2.Text = resultmax.ToString()
+
+        If n1 < n2 And n2 < n3 Then
+            resultmin = n1.ToString
+        ElseIf n2 < n1 And n2 < n3 Then
+            resultmin = n2.ToString
+        Else
+            resultmin = n3.ToString
+
+
+        End If
+
+
+
+        Label1.Text = resultmin.ToString()
 
 
 
