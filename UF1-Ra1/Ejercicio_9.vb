@@ -7,7 +7,11 @@
         mes = CInt(TextBox1.Text)
         año = CInt(TextBox2.Text)
 
-        If mes = 2 And año Mod 4 = 0 And año Mod 100 = 0 And año Mod 400 <> 0 Then
+        If mes < 1 Or mes > 12 Then
+            MessageBox.Show("solo hay 12 meses")
+
+
+        ElseIf mes = 2 And año Mod 4 = 0 And año Mod 100 = 0 And año Mod 400 <> 0 Then
             dias = 28
         ElseIf mes = 2 And año Mod 4 = 0 Then
             dias = 29
@@ -15,15 +19,13 @@
             dias = 28
         ElseIf mes <> 2 And mes Mod 2 <> 0 And mes <= 7 Then
             dias = 31
-
         ElseIf mes <> 2 And mes Mod 2 = 0 And mes > 7 Then
             dias = 31
         Else
             dias = 30
-
-
-
         End If
         Label1.Text = dias
+
+
     End Sub
 End Class

@@ -5,7 +5,7 @@
 
         letra = TextBox1.Text
 
-        posicion = InStr("aeioubcdfghjklmnñopqrstvwxyz", letra)
+        posicion = InStr("aeioubcdfghjklmnñpqrstvwxyz", letra)
 
         If posicion < 5 And posicion > 0 Then
             MessageBox.Show("vocal")

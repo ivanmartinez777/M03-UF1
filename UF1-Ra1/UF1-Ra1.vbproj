@@ -78,6 +78,12 @@
     <Compile Include="Booleano3.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Calculadora.Designer.vb">
+      <DependentUpon>Calculadora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Calculadora.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Ejercicio_2.Designer.vb">
       <DependentUpon>Ejercicio_2.vb</DependentUpon>
     </Compile>
@@ -169,6 +175,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Booleano3.resx">
       <DependentUpon>Booleano3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculadora.resx">
+      <DependentUpon>Calculadora.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ejercicio_2.resx">
       <DependentUpon>Ejercicio_2.vb</DependentUpon>
