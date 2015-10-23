@@ -5,6 +5,6 @@
         name = InputBox(Prompt:="hola jefe, como te llamas?")
 
 
-        MessageBox.Show("Hola Don")
+        MsgBox("Hola Don " & name & "")
     End Sub
 End Class

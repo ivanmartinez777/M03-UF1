@@ -9,8 +9,6 @@
 
         If mes < 1 Or mes > 12 Then
             MessageBox.Show("solo hay 12 meses")
-
-
         ElseIf mes = 2 And año Mod 4 = 0 And año Mod 100 = 0 And año Mod 400 <> 0 Then
             dias = 28
         ElseIf mes = 2 And año Mod 4 = 0 Then
