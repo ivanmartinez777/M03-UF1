@@ -12,7 +12,7 @@
 
         For cont = 0 To 10
             parcial = n1 * cont
-            salida = salida + n1.ToString() + "x" + cont.ToString + "=" + parcial.ToString() + Environment.NewLine(2)
+            salida = salida + n1.ToString() + "x" + cont.ToString + "=" + parcial.ToString() + Environment.NewLine()
         Next
 
         MessageBox.Show(salida)

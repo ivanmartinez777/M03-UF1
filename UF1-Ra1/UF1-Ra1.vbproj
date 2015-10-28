@@ -72,6 +72,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdivinaElNumeroProfe.Designer.vb">
+      <DependentUpon>AdivinaElNumeroProfe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdivinaElNumeroProfe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdivinarUnNumero.Designer.vb">
+      <DependentUpon>AdivinarUnNumero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdivinarUnNumero.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Booleano3.Designer.vb">
       <DependentUpon>Booleano3.vb</DependentUpon>
     </Compile>
@@ -82,6 +94,12 @@
       <DependentUpon>Calculadora.vb</DependentUpon>
     </Compile>
     <Compile Include="Calculadora.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ejercicio_11.Designer.vb">
+      <DependentUpon>Ejercicio_11.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicio_11.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ejercicio_2.Designer.vb">
@@ -173,11 +191,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AdivinaElNumeroProfe.resx">
+      <DependentUpon>AdivinaElNumeroProfe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdivinarUnNumero.resx">
+      <DependentUpon>AdivinarUnNumero.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Booleano3.resx">
       <DependentUpon>Booleano3.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Calculadora.resx">
       <DependentUpon>Calculadora.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ejercicio_11.resx">
+      <DependentUpon>Ejercicio_11.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ejercicio_2.resx">
       <DependentUpon>Ejercicio_2.vb</DependentUpon>
