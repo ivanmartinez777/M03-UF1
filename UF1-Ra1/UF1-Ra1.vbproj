@@ -189,6 +189,18 @@
     <Compile Include="Aleatorio.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="suma100.Designer.vb">
+      <DependentUpon>suma100.vb</DependentUpon>
+    </Compile>
+    <Compile Include="suma100.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="suma_impares.Designer.vb">
+      <DependentUpon>suma_impares.vb</DependentUpon>
+    </Compile>
+    <Compile Include="suma_impares.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="tablamultiplicar.Designer.vb">
       <DependentUpon>tablamultiplicar.vb</DependentUpon>
     </Compile>
@@ -253,6 +265,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Aleatorio.resx">
       <DependentUpon>Aleatorio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="suma100.resx">
+      <DependentUpon>suma100.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="suma_impares.resx">
+      <DependentUpon>suma_impares.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="tablamultiplicar.resx">
       <DependentUpon>tablamultiplicar.vb</DependentUpon>
