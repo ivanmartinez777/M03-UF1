@@ -90,6 +90,12 @@
     <Compile Include="Booleano3.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Bucles_pares.Designer.vb">
+      <DependentUpon>Bucles_pares.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bucles_pares.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Calculadora.Designer.vb">
       <DependentUpon>Calculadora.vb</DependentUpon>
     </Compile>
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Booleano3.resx">
       <DependentUpon>Booleano3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bucles_pares.resx">
+      <DependentUpon>Bucles_pares.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Calculadora.resx">
       <DependentUpon>Calculadora.vb</DependentUpon>
