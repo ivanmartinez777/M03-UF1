@@ -4,8 +4,8 @@
         Dim cnt As Integer
         Dim menor As Integer = 0
 
-        numero = InputBox("introduce el numero")
-        menor = numero
+        menor = InputBox("introduce el numero")
+
 
         For cnt = 0 To 8
             numero = InputBox("introduce el numero")
