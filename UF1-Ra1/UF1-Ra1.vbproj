@@ -102,6 +102,12 @@
     <Compile Include="Calculadora.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="CalculoDeLaMedia.Designer.vb">
+      <DependentUpon>CalculoDeLaMedia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CalculoDeLaMedia.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Ejercicio_11.Designer.vb">
       <DependentUpon>Ejercicio_11.vb</DependentUpon>
     </Compile>
@@ -160,6 +166,12 @@
       <DependentUpon>Form2.vb</DependentUpon>
     </Compile>
     <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntroducciónYMenor.Designer.vb">
+      <DependentUpon>IntroducciónYMenor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IntroducciónYMenor.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -224,6 +236,9 @@
     <EmbeddedResource Include="Calculadora.resx">
       <DependentUpon>Calculadora.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CalculoDeLaMedia.resx">
+      <DependentUpon>CalculoDeLaMedia.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ejercicio_11.resx">
       <DependentUpon>Ejercicio_11.vb</DependentUpon>
     </EmbeddedResource>
@@ -253,6 +268,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntroducciónYMenor.resx">
+      <DependentUpon>IntroducciónYMenor.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
