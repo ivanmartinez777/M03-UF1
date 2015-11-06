@@ -108,6 +108,12 @@
     <Compile Include="CalculoDeLaMedia.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Digitos.Designer.vb">
+      <DependentUpon>Digitos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Digitos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Ejercicio_11.Designer.vb">
       <DependentUpon>Ejercicio_11.vb</DependentUpon>
     </Compile>
@@ -213,6 +219,12 @@
     <Compile Include="suma100.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SumarIntervalos.Designer.vb">
+      <DependentUpon>SumarIntervalos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SumarIntervalos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="suma_impares.Designer.vb">
       <DependentUpon>suma_impares.vb</DependentUpon>
     </Compile>
@@ -244,6 +256,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CalculoDeLaMedia.resx">
       <DependentUpon>CalculoDeLaMedia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Digitos.resx">
+      <DependentUpon>Digitos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ejercicio_11.resx">
       <DependentUpon>Ejercicio_11.vb</DependentUpon>
@@ -295,6 +310,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="suma100.resx">
       <DependentUpon>suma100.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SumarIntervalos.resx">
+      <DependentUpon>SumarIntervalos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="suma_impares.resx">
       <DependentUpon>suma_impares.vb</DependentUpon>
