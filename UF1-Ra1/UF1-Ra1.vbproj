@@ -108,6 +108,12 @@
     <Compile Include="CalculoDeLaMedia.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="cuadrado.Designer.vb">
+      <DependentUpon>cuadrado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cuadrado.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Digitos.Designer.vb">
       <DependentUpon>Digitos.vb</DependentUpon>
     </Compile>
@@ -213,6 +219,12 @@
     <Compile Include="Aleatorio.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="piramedes.Designer.vb">
+      <DependentUpon>piramedes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="piramedes.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="suma100.Designer.vb">
       <DependentUpon>suma100.vb</DependentUpon>
     </Compile>
@@ -237,6 +249,12 @@
     <Compile Include="tablamultiplicar.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="triangulo.Designer.vb">
+      <DependentUpon>triangulo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="triangulo.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AdivinaElNumeroProfe.resx">
@@ -256,6 +274,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CalculoDeLaMedia.resx">
       <DependentUpon>CalculoDeLaMedia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cuadrado.resx">
+      <DependentUpon>cuadrado.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Digitos.resx">
       <DependentUpon>Digitos.vb</DependentUpon>
@@ -308,6 +329,9 @@
     <EmbeddedResource Include="Aleatorio.resx">
       <DependentUpon>Aleatorio.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="piramedes.resx">
+      <DependentUpon>piramedes.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="suma100.resx">
       <DependentUpon>suma100.vb</DependentUpon>
     </EmbeddedResource>
@@ -319,6 +343,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="tablamultiplicar.resx">
       <DependentUpon>tablamultiplicar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="triangulo.resx">
+      <DependentUpon>triangulo.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
