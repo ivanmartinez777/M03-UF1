@@ -174,6 +174,12 @@
     <Compile Include="IntroducciónYMenor.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="IntroducirNumeroParOImpar.Designer.vb">
+      <DependentUpon>IntroducirNumeroParOImpar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IntroducirNumeroParOImpar.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -271,6 +277,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IntroducciónYMenor.resx">
       <DependentUpon>IntroducciónYMenor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntroducirNumeroParOImpar.resx">
+      <DependentUpon>IntroducirNumeroParOImpar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
