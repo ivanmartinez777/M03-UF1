@@ -7,10 +7,10 @@
         Numero = InputBox("introduce un numero para la factorizacion")
 
         For cnt = 1 To Numero
-            Resultado = Resultado * (cnt)
+            Resultado = Resultado * cnt
 
-            MessageBox.Show(Resultado)
+
         Next
-
+        MessageBox.Show(Resultado)
     End Sub
 End Class
