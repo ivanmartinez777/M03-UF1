@@ -144,6 +144,18 @@
     <Compile Include="Ejercicio_11.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Ejercicio_13.Designer.vb">
+      <DependentUpon>Ejercicio_13.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicio_13.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ejercicio_15.Designer.vb">
+      <DependentUpon>Ejercicio_15.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicio_15.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Ejercicio_2.Designer.vb">
       <DependentUpon>Ejercicio_2.vb</DependentUpon>
     </Compile>
@@ -305,6 +317,9 @@
     <EmbeddedResource Include="Digitos.resx">
       <DependentUpon>Digitos.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ejercicio 12.resx">
+      <DependentUpon>Ejercicio 12.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ejercicio11.resx">
       <DependentUpon>Ejercicio11.vb</DependentUpon>
     </EmbeddedResource>
@@ -313,6 +328,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ejercicio_11.resx">
       <DependentUpon>Ejercicio_11.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ejercicio_13.resx">
+      <DependentUpon>Ejercicio_13.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ejercicio_15.resx">
+      <DependentUpon>Ejercicio_15.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ejercicio_2.resx">
       <DependentUpon>Ejercicio_2.vb</DependentUpon>
