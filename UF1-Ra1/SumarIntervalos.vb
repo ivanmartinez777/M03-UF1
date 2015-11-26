@@ -4,18 +4,18 @@
         Dim num2 As Integer
         Dim suma As Integer = 0
         Dim cnt As Integer
-        Dim intervalo As Integer
+
 
 
         num1 = InputBox("Introduce un número")
         num2 = InputBox("Introduce otre número")
 
-        intervalo = num2 - num1
 
 
-        For cnt = 1 To intervalo
 
-            suma = suma + (num1 + cnt)
+        For cnt = num1 To num2
+
+            suma = suma + cnt
 
         Next
         MessageBox.Show(suma.ToString)
