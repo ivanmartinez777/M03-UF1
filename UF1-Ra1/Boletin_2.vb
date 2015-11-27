@@ -1,6 +1,6 @@
 ﻿Public Class Boletin_2
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim r As New Random
+
         Dim vector(14) As Integer
         Dim n As Integer
         Dim cnt As Integer
@@ -18,7 +18,7 @@
 
         n = InputBox("introduce un número menor que 15")
 
-        For cnt = 0 To n
+        For cnt = 0 To n - 1
             suma = suma + vector(cnt)
 
         Next
