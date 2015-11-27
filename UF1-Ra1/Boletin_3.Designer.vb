@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Boletin_2
+Partial Class Boletin_3
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -27,21 +27,21 @@ Partial Class Boletin_2
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(103, 60)
+        Me.Button1.Location = New System.Drawing.Point(73, 96)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Boletin_2
+        'Boletin_3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.Controls.Add(Me.Button1)
-        Me.Name = "Boletin_2"
-        Me.Text = "Boletin_2"
+        Me.Name = "Boletin_3"
+        Me.Text = "Boletin_3"
         Me.ResumeLayout(False)
 
     End Sub

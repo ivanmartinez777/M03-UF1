@@ -108,6 +108,12 @@
     <Compile Include="Boletin_2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Boletin_3.Designer.vb">
+      <DependentUpon>Boletin_3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Boletin_3.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Booleano3.Designer.vb">
       <DependentUpon>Booleano3.vb</DependentUpon>
     </Compile>
@@ -352,6 +358,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Boletin_2.resx">
       <DependentUpon>Boletin_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boletin_3.resx">
+      <DependentUpon>Boletin_3.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Booleano3.resx">
       <DependentUpon>Booleano3.vb</DependentUpon>
