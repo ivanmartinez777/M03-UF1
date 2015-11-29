@@ -3,8 +3,14 @@
         Dim valor As Integer
         Dim acierto As Integer
         Dim cnt As Integer = 4
+        Dim nombre As String
 
-        acierto = 4
+        nombre = InputBox("Como te llamas gusano?")
+        MessageBox.Show("Muy bien" + " " + nombre + "." + " " + " Bienvenida al juego de la muerte!")
+
+        Randomize()
+        acierto = Rnd() * 10
+
 
         Do Until valor = acierto Or cnt = 0
             valor = InputBox("introduce un número amigo")
@@ -23,7 +29,8 @@
             MessageBox.Show("esta vez lo has conseguido, pero no volverá a ocurrir!")
 
         Else
-            MessageBox.Show("Se te acabaron los intentos amigo. Estas acabado!")
+            MessageBox.Show("Este era el número!" + " " + acierto.ToString
+                            )
 
         End If
 
