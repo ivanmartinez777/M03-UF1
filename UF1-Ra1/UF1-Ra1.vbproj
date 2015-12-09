@@ -114,6 +114,12 @@
     <Compile Include="Boletin_3.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Boletin_4.Designer.vb">
+      <DependentUpon>Boletin_4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Boletin_4.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Booleano3.Designer.vb">
       <DependentUpon>Booleano3.vb</DependentUpon>
     </Compile>
@@ -142,6 +148,12 @@
       <DependentUpon>Digitos.vb</DependentUpon>
     </Compile>
     <Compile Include="Digitos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EjemploArraydosdimensiones.Designer.vb">
+      <DependentUpon>EjemploArraydosdimensiones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EjemploArraydosdimensiones.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ejercicio 12.Designer.vb">
@@ -362,6 +374,9 @@
     <EmbeddedResource Include="Boletin_3.resx">
       <DependentUpon>Boletin_3.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Boletin_4.resx">
+      <DependentUpon>Boletin_4.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Booleano3.resx">
       <DependentUpon>Booleano3.vb</DependentUpon>
     </EmbeddedResource>
@@ -376,6 +391,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Digitos.resx">
       <DependentUpon>Digitos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EjemploArraydosdimensiones.resx">
+      <DependentUpon>EjemploArraydosdimensiones.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ejercicio 12.resx">
       <DependentUpon>Ejercicio 12.vb</DependentUpon>
