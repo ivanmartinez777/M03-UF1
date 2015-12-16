@@ -96,6 +96,12 @@
     <Compile Include="Arrays_Notas1.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Boletin 6.Designer.vb">
+      <DependentUpon>Boletin 6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Boletin 6.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Boletin5.Designer.vb">
       <DependentUpon>Boletin5.vb</DependentUpon>
     </Compile>
@@ -376,6 +382,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Arrays_Notas1.resx">
       <DependentUpon>Arrays_Notas1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boletin 6.resx">
+      <DependentUpon>Boletin 6.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Boletin5.resx">
       <DependentUpon>Boletin5.vb</DependentUpon>
