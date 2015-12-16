@@ -51,7 +51,7 @@ Partial Class Ejercicio1
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Button3"
+        Me.Button3.Text = "Ejercicio 3"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Ejercicio1
@@ -63,7 +63,7 @@ Partial Class Ejercicio1
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Name = "Ejercicio1"
-        Me.Text = "Ejercicio1"
+        Me.Text = "Ejercicio 3"
         Me.ResumeLayout(False)
 
     End Sub
