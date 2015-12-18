@@ -8,6 +8,7 @@
         Dim sumaC As Integer
         Dim salidaF As String = ""
         Dim salidaC As String = ""
+        Dim salida As String = ""
         Dim r As New Random
 
 
@@ -15,9 +16,12 @@
         For i = 0 To 9
             For j = 0 To 9
                 matriz(i, j) = r.Next(0, 100)
+                salida = salida + " " + matriz(i, j).ToString
             Next
-
+            salida = salida + vbNewLine
         Next
+        MessageBox.Show(salida)
+
 
         For i = 0 To 9
             sumaF = 0
@@ -186,5 +190,28 @@
 
         Next
         MessageBox.Show(salida)
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        Dim vector(9) As Integer
+        Dim cnt As Integer
+        Dim suma As Integer
+        Dim salida As String = ""
+
+
+        For cnt = 0 To 9
+            vector(cnt) = InputBox("Introduce un número")
+
+        Next
+
+        For cnt = 0 To 9 Step 2
+            suma = vector(cnt) + vector(cnt + 1)
+            salida = salida + suma.ToString + " "
+
+
+
+        Next
+        MessageBox.Show(salida)
+
     End Sub
 End Class

@@ -30,11 +30,13 @@ Partial Class Entrega_Arrays
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button10 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(23, 200)
+        Me.Button1.Location = New System.Drawing.Point(23, 186)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 0
@@ -43,7 +45,7 @@ Partial Class Entrega_Arrays
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(23, 171)
+        Me.Button2.Location = New System.Drawing.Point(23, 157)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 1
@@ -52,7 +54,7 @@ Partial Class Entrega_Arrays
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(23, 142)
+        Me.Button3.Location = New System.Drawing.Point(23, 128)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 2
@@ -61,7 +63,7 @@ Partial Class Entrega_Arrays
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(23, 61)
+        Me.Button4.Location = New System.Drawing.Point(23, 70)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 3
@@ -70,7 +72,7 @@ Partial Class Entrega_Arrays
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(23, 32)
+        Me.Button5.Location = New System.Drawing.Point(23, 41)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(75, 23)
         Me.Button5.TabIndex = 4
@@ -79,7 +81,7 @@ Partial Class Entrega_Arrays
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(23, 3)
+        Me.Button6.Location = New System.Drawing.Point(23, 12)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(75, 23)
         Me.Button6.TabIndex = 5
@@ -88,7 +90,7 @@ Partial Class Entrega_Arrays
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(23, 90)
+        Me.Button7.Location = New System.Drawing.Point(23, 99)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(75, 23)
         Me.Button7.TabIndex = 6
@@ -97,18 +99,38 @@ Partial Class Entrega_Arrays
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(23, 230)
+        Me.Button8.Location = New System.Drawing.Point(23, 215)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(75, 23)
         Me.Button8.TabIndex = 7
         Me.Button8.Text = "Ejercicio 8"
         Me.Button8.UseVisualStyleBackColor = True
         '
+        'Button9
+        '
+        Me.Button9.Location = New System.Drawing.Point(23, 244)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(75, 23)
+        Me.Button9.TabIndex = 8
+        Me.Button9.Text = "Ejercicio 9"
+        Me.Button9.UseVisualStyleBackColor = True
+        '
+        'Button10
+        '
+        Me.Button10.Location = New System.Drawing.Point(23, 273)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(75, 23)
+        Me.Button10.TabIndex = 9
+        Me.Button10.Text = "Button10"
+        Me.Button10.UseVisualStyleBackColor = True
+        '
         'Entrega_Arrays
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 329)
+        Me.Controls.Add(Me.Button10)
+        Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
@@ -131,4 +153,6 @@ Partial Class Entrega_Arrays
     Friend WithEvents Button6 As Button
     Friend WithEvents Button7 As Button
     Friend WithEvents Button8 As Button
+    Friend WithEvents Button9 As Button
+    Friend WithEvents Button10 As Button
 End Class
