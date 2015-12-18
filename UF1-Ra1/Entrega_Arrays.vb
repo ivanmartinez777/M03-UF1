@@ -1,7 +1,7 @@
 ﻿Public Class Entrega_Arrays
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
-        Dim matriz(3, 3) As Integer
+        Dim matriz(9, 9) As Integer
 
         Dim i, j As Integer
         Dim sumaF As Integer
@@ -12,16 +12,16 @@
 
 
 
-        For i = 0 To 3
-            For j = 0 To 3
+        For i = 0 To 9
+            For j = 0 To 9
                 matriz(i, j) = r.Next(0, 100)
             Next
 
         Next
 
-        For i = 0 To 3
+        For i = 0 To 9
             sumaF = 0
-            For j = 0 To 3
+            For j = 0 To 9
 
                 sumaF = sumaF + matriz(i, j)
 
@@ -30,9 +30,9 @@
 
         Next
 
-        For j = 0 To 3
+        For j = 0 To 9
             sumaC = 0
-            For i = 0 To 3
+            For i = 0 To 9
 
                 sumaC = sumaC + matriz(i, j)
 
@@ -156,6 +156,34 @@
             n2 = numeros(cnt) ^ 2
             n3 = numeros(cnt) ^ 3
             salida = salida + (numeros(cnt).ToString + " " + n2.ToString + " " + n3.ToString + Environment.NewLine())
+        Next
+        MessageBox.Show(salida)
+    End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        Dim marco(4, 14) As Integer
+        Dim i, j As Integer
+        Dim salida As String = ""
+
+        For i = 0 To 4
+            For j = 0 To 14
+                marco(i, j) = 0
+            Next
+        Next
+
+        For i = 0 To 4
+            For j = 0 To 14
+                If i = 0 Or i = 4 Then
+                    marco(i, j) = 1
+                End If
+                If j = 0 Or j = 14 Then
+                    marco(i, j) = 1
+
+                End If
+                salida = salida + marco(i, j).ToString
+            Next
+            salida = salida + vbNewLine
+
         Next
         MessageBox.Show(salida)
     End Sub
