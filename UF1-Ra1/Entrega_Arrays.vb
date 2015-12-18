@@ -197,6 +197,11 @@
         Dim cnt As Integer
         Dim suma As Integer
         Dim salida As String = ""
+        Dim par(9) As Integer
+        Dim impar(9) As Integer
+        Dim cntp As Integer = 0
+        Dim cnti As Integer = 0
+
 
 
         For cnt = 0 To 9
@@ -204,14 +209,56 @@
 
         Next
 
-        For cnt = 0 To 9 Step 2
-            suma = vector(cnt) + vector(cnt + 1)
-            salida = salida + suma.ToString + " "
+        For cnt = 0 To 9
+            If vector(cnt) Mod 2 = 0 Then
+                par(cntp) = vector(cnt)
+                cntp = cntp + 1
+            Else
 
+
+                impar(cnti) = vector(cnt)
+                cnti = cnti + 1
+                MessageBox.Show("impar" + impar(cntp).ToString)
+
+            End If
 
 
         Next
+        For cnti = 0 To 9
+
+
+            MessageBox.Show(impar(cnti))
+            MessageBox.Show(par(cntp))
+        Next
+
+
+
+        For cnt = 0 To 9
+            suma = par(cntp) + impar(cnti)
+            cntp = cntp + 1
+            cnti = cnti + 1
+            salida = salida + suma.ToString + " "
+        Next
+
         MessageBox.Show(salida)
 
+    End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        Dim vector(9) As Integer
+        Dim cnt As Integer = 0
+        Dim suma As Integer = 0
+        Dim salida As String = ""
+
+        For cnt = 0 To 9
+            vector(cnt) = InputBox("Introduce un número")
+        Next
+
+        For cnt = 0 To 9
+
+        Next
+
+
+        MessageBox.Show(suma)
     End Sub
 End Class

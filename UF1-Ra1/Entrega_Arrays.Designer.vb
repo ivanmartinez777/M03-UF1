@@ -121,7 +121,7 @@ Partial Class Entrega_Arrays
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(75, 23)
         Me.Button10.TabIndex = 9
-        Me.Button10.Text = "Button10"
+        Me.Button10.Text = "Ejercicio 10"
         Me.Button10.UseVisualStyleBackColor = True
         '
         'Entrega_Arrays
