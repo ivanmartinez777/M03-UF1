@@ -114,6 +114,12 @@
     <Compile Include="Boletin6_1.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Boletin7vb.Designer.vb">
+      <DependentUpon>Boletin7vb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Boletin7vb.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Boletin_2.Designer.vb">
       <DependentUpon>Boletin_2.vb</DependentUpon>
     </Compile>
@@ -270,6 +276,12 @@
     <Compile Include="Ejercicio_9.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Entrega_Arrays.Designer.vb">
+      <DependentUpon>Entrega_Arrays.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Entrega_Arrays.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="EstaArray.Designer.vb">
       <DependentUpon>EstaArray.vb</DependentUpon>
     </Compile>
@@ -392,6 +404,9 @@
     <EmbeddedResource Include="Boletin6_1.resx">
       <DependentUpon>Boletin6_1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Boletin7vb.resx">
+      <DependentUpon>Boletin7vb.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Boletin_2.resx">
       <DependentUpon>Boletin_2.vb</DependentUpon>
     </EmbeddedResource>
@@ -469,6 +484,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ejercicio_9.resx">
       <DependentUpon>Ejercicio_9.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entrega_Arrays.resx">
+      <DependentUpon>Entrega_Arrays.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EstaArray.resx">
       <DependentUpon>EstaArray.vb</DependentUpon>
