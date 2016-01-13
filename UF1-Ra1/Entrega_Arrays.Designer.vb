@@ -28,10 +28,10 @@ Partial Class Entrega_Arrays
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
+        Me.Button11 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -88,15 +88,6 @@ Partial Class Entrega_Arrays
         Me.Button6.Text = "Ejercicio 1"
         Me.Button6.UseVisualStyleBackColor = True
         '
-        'Button7
-        '
-        Me.Button7.Location = New System.Drawing.Point(23, 99)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(75, 23)
-        Me.Button7.TabIndex = 6
-        Me.Button7.Text = "Ejercicio 4"
-        Me.Button7.UseVisualStyleBackColor = True
-        '
         'Button8
         '
         Me.Button8.Location = New System.Drawing.Point(23, 215)
@@ -106,33 +97,42 @@ Partial Class Entrega_Arrays
         Me.Button8.Text = "Ejercicio 8"
         Me.Button8.UseVisualStyleBackColor = True
         '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(23, 270)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(75, 23)
+        Me.Button7.TabIndex = 8
+        Me.Button7.Text = "Ejercicio 10"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
         'Button9
         '
-        Me.Button9.Location = New System.Drawing.Point(23, 244)
+        Me.Button9.Location = New System.Drawing.Point(167, 12)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(75, 23)
-        Me.Button9.TabIndex = 8
-        Me.Button9.Text = "Ejercicio 9"
+        Me.Button9.TabIndex = 9
+        Me.Button9.Text = "Ejercicio 11"
         Me.Button9.UseVisualStyleBackColor = True
         '
-        'Button10
+        'Button11
         '
-        Me.Button10.Location = New System.Drawing.Point(23, 273)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(75, 23)
-        Me.Button10.TabIndex = 9
-        Me.Button10.Text = "Ejercicio 10"
-        Me.Button10.UseVisualStyleBackColor = True
+        Me.Button11.Location = New System.Drawing.Point(167, 69)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(75, 23)
+        Me.Button11.TabIndex = 11
+        Me.Button11.Text = "Ejercicio 13"
+        Me.Button11.UseVisualStyleBackColor = True
         '
         'Entrega_Arrays
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 329)
-        Me.Controls.Add(Me.Button10)
+        Me.Controls.Add(Me.Button11)
         Me.Controls.Add(Me.Button9)
-        Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button7)
+        Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
@@ -151,8 +151,8 @@ Partial Class Entrega_Arrays
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
-    Friend WithEvents Button7 As Button
     Friend WithEvents Button8 As Button
+    Friend WithEvents Button7 As Button
     Friend WithEvents Button9 As Button
-    Friend WithEvents Button10 As Button
+    Friend WithEvents Button11 As Button
 End Class

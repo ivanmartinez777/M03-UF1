@@ -192,20 +192,21 @@
         MessageBox.Show(salida)
     End Sub
 
-    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+    Private Sub Button9_Click(sender As Object, e As EventArgs) 
         Dim vector(9) As Integer
         Dim cnt As Integer
         Dim suma As Integer
-        Dim salida As String = ""
+
         Dim par(9) As Integer
         Dim impar(9) As Integer
-        Dim cntp As Integer = 0
-        Dim cnti As Integer = 0
+        Dim cntp As Integer
+        Dim cnti As Integer
 
 
 
         For cnt = 0 To 9
             vector(cnt) = InputBox("Introduce un número")
+
 
         Next
 
@@ -213,38 +214,33 @@
             If vector(cnt) Mod 2 = 0 Then
                 par(cntp) = vector(cnt)
                 cntp = cntp + 1
-            Else
+
+            ElseIf vector(cnt) Mod 2 <> 0 Then
 
 
                 impar(cnti) = vector(cnt)
                 cnti = cnti + 1
-                MessageBox.Show("impar" + impar(cntp).ToString)
+
 
             End If
 
-
         Next
-        For cnti = 0 To 9
 
-
-            MessageBox.Show(impar(cnti))
-            MessageBox.Show(par(cntp))
-        Next
+        MessageBox.Show(impar(cnti))
 
 
 
         For cnt = 0 To 9
             suma = par(cntp) + impar(cnti)
-            cntp = cntp + 1
-            cnti = cnti + 1
-            salida = salida + suma.ToString + " "
+
+            MessageBox.Show(suma)
         Next
 
-        MessageBox.Show(salida)
+
 
     End Sub
 
-    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+    Private Sub Button10_Click(sender As Object, e As EventArgs) 
         Dim vector(9) As Integer
         Dim cnt As Integer = 0
         Dim suma As Integer = 0
@@ -260,5 +256,75 @@
 
 
         MessageBox.Show(suma)
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        Dim vector(4) As Integer
+        Dim cnt As Integer
+        Dim suma As Integer
+        Dim salida As String
+
+        For cnt = 0 To 4
+            vector(cnt) = InputBox("Introduce un numero")
+
+
+        Next
+        suma = vector(0)
+
+        For cnt = 1 To 4
+            suma = suma + vector(cnt)
+            salida = salida + " " + suma.ToString + " " + vbNewLine
+
+        Next
+
+        MessageBox.Show(salida)
+
+    End Sub
+
+    Private Sub Button9_Click_1(sender As Object, e As EventArgs) Handles Button9.Click
+        Dim r As New Random
+        Dim vector(9) As Integer
+
+        Dim cnt As Integer
+
+        Dim min As Integer
+        Dim salida As String
+        Dim indice As String
+        For cnt = 0 To 9
+            vector(cnt) = r.Next(0, 100)
+            salida = salida + " " + vector(cnt).ToString + " " + vbNewLine
+
+
+        Next
+
+        min = vector(0)
+
+        For cnt = 1 To 9
+            If vector(cnt) < min Then
+                min = vector(cnt)
+                indice = (cnt)
+            End If
+        Next
+        MessageBox.Show(salida + " La posicion del indice más pequeño es  " + indice.ToString)
+    End Sub
+
+    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+        Dim v(4) As Integer
+        Dim w(4) As Integer
+        Dim x(4) As Integer
+        Dim salida As String
+        For cnt = 0 To 4
+            v(cnt) = InputBox("introduce un número para la variable v")
+            w(cnt) = InputBox("introduce un número para la variable w")
+
+        Next
+
+
+        For cnt = 0 To 4
+            x(cnt) = v(cnt) + w(cnt)
+            salida = salida + x(cnt).ToString + vbNewLine
+
+        Next
+        MessageBox.Show(salida)
     End Sub
 End Class
