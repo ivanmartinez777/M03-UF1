@@ -4,7 +4,7 @@
         Dim n2 As Integer
         Dim n3 As Integer
         Dim cnt As Integer
-        Dim salida As String
+        Dim salida As String = ""
         For cnt = 0 To 9
             numeros(cnt) = InputBox("introduce un numero diferente de 0")
 

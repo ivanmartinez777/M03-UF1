@@ -8,7 +8,7 @@
         Dim cnti As Integer = 1
         Dim suma As Integer
         Dim cnt0 As Integer = 0
-        Dim salida As String
+        Dim salida As String = ""
 
         For cnt = 0 To 9
             vector(cnt) = InputBox("introduce un numero")

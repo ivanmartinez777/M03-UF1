@@ -3,7 +3,7 @@
         Dim n As Integer
         Dim cont As Integer
         Dim resultado As Integer
-        Dim salida As String
+        Dim salida As String = ""
 
         n = InputBox("Escribe un numero superior a 0")
 

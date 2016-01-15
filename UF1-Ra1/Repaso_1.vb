@@ -3,7 +3,7 @@
         'Dada una tabla de 5x5, rellenar con 0 excepto la cruz del medio que será con 1"
         Dim v(4, 4) As Integer
         Dim i, j As Integer
-        Dim salida As String
+        Dim salida As String = ""
 
         For i = 0 To 4
 
@@ -30,8 +30,8 @@
         Dim v(4, 4) As Integer
         Dim i, j As Integer
         Dim suma As Integer
-        Dim salida As String
-        Dim resultado As String
+        Dim salida As String = " "
+        Dim resultado As String = ""
 
 
         For i = 0 To 4

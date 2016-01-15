@@ -1,7 +1,7 @@
 ﻿Public Class Ejercicio_6
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim ndia As Integer
-        Dim dia As String
+        Dim dia As String = ""
 
         ndia = CInt(TextBox1.Text)
 

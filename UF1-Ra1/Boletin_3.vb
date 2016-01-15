@@ -2,7 +2,7 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim tabla(19) As Integer
         Dim cnt As Integer
-        Dim salida As String
+        Dim salida As String = " "
         Dim cnt0 As Integer = 0
 
         For cnt = 0 To tabla.Length - 1

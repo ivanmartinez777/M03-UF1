@@ -22,137 +22,197 @@ Partial Class Entrega_Arrays
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
+        Me.Ejercicio7 = New System.Windows.Forms.Button()
+        Me.Ejercicio6 = New System.Windows.Forms.Button()
+        Me.Ejercicio5 = New System.Windows.Forms.Button()
+        Me.Ejercicio3 = New System.Windows.Forms.Button()
+        Me.Ejercicio2 = New System.Windows.Forms.Button()
+        Me.Ejercicio1 = New System.Windows.Forms.Button()
+        Me.Ejercicio8 = New System.Windows.Forms.Button()
+        Me.Ejercicio10 = New System.Windows.Forms.Button()
+        Me.Ejercicio11 = New System.Windows.Forms.Button()
+        Me.Ejercicio13 = New System.Windows.Forms.Button()
+        Me.Ejercicio14 = New System.Windows.Forms.Button()
+        Me.Ejercicio15 = New System.Windows.Forms.Button()
+        Me.Ejercicio12 = New System.Windows.Forms.Button()
+        Me.Ejercicio4 = New System.Windows.Forms.Button()
+        Me.Ejercicio9 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Button1
+        'Ejercicio7
         '
-        Me.Button1.Location = New System.Drawing.Point(23, 186)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Ejercicio 7"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Ejercicio7.Location = New System.Drawing.Point(23, 186)
+        Me.Ejercicio7.Name = "Ejercicio7"
+        Me.Ejercicio7.Size = New System.Drawing.Size(75, 23)
+        Me.Ejercicio7.TabIndex = 0
+        Me.Ejercicio7.Text = "Ejercicio 7"
+        Me.Ejercicio7.UseVisualStyleBackColor = True
         '
-        'Button2
+        'Ejercicio6
         '
-        Me.Button2.Location = New System.Drawing.Point(23, 157)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Ejercicio 6"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Ejercicio6.Location = New System.Drawing.Point(23, 157)
+        Me.Ejercicio6.Name = "Ejercicio6"
+        Me.Ejercicio6.Size = New System.Drawing.Size(75, 23)
+        Me.Ejercicio6.TabIndex = 1
+        Me.Ejercicio6.Text = "Ejercicio 6"
+        Me.Ejercicio6.UseVisualStyleBackColor = True
         '
-        'Button3
+        'Ejercicio5
         '
-        Me.Button3.Location = New System.Drawing.Point(23, 128)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Ejercicio 5"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Ejercicio5.Location = New System.Drawing.Point(23, 128)
+        Me.Ejercicio5.Name = "Ejercicio5"
+        Me.Ejercicio5.Size = New System.Drawing.Size(75, 23)
+        Me.Ejercicio5.TabIndex = 2
+        Me.Ejercicio5.Text = "Ejercicio 5"
+        Me.Ejercicio5.UseVisualStyleBackColor = True
         '
-        'Button4
+        'Ejercicio3
         '
-        Me.Button4.Location = New System.Drawing.Point(23, 70)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "Ejercicio 3"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Ejercicio3.Location = New System.Drawing.Point(23, 70)
+        Me.Ejercicio3.Name = "Ejercicio3"
+        Me.Ejercicio3.Size = New System.Drawing.Size(75, 23)
+        Me.Ejercicio3.TabIndex = 3
+        Me.Ejercicio3.Text = "Ejercicio 3"
+        Me.Ejercicio3.UseVisualStyleBackColor = True
         '
-        'Button5
+        'Ejercicio2
         '
-        Me.Button5.Location = New System.Drawing.Point(23, 41)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 23)
-        Me.Button5.TabIndex = 4
-        Me.Button5.Text = "Ejercicio 2"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.Ejercicio2.Location = New System.Drawing.Point(23, 41)
+        Me.Ejercicio2.Name = "Ejercicio2"
+        Me.Ejercicio2.Size = New System.Drawing.Size(75, 23)
+        Me.Ejercicio2.TabIndex = 4
+        Me.Ejercicio2.Text = "Ejercicio 2"
+        Me.Ejercicio2.UseVisualStyleBackColor = True
         '
-        'Button6
+        'Ejercicio1
         '
-        Me.Button6.Location = New System.Drawing.Point(23, 12)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(75, 23)
-        Me.Button6.TabIndex = 5
-        Me.Button6.Text = "Ejercicio 1"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.Ejercicio1.Location = New System.Drawing.Point(23, 12)
+        Me.Ejercicio1.Name = "Ejercicio1"
+        Me.Ejercicio1.Size = New System.Drawing.Size(75, 23)
+        Me.Ejercicio1.TabIndex = 5
+        Me.Ejercicio1.Text = "Ejercicio 1"
+        Me.Ejercicio1.UseVisualStyleBackColor = True
         '
-        'Button8
+        'Ejercicio8
         '
-        Me.Button8.Location = New System.Drawing.Point(23, 215)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(75, 23)
-        Me.Button8.TabIndex = 7
-        Me.Button8.Text = "Ejercicio 8"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.Ejercicio8.Location = New System.Drawing.Point(23, 215)
+        Me.Ejercicio8.Name = "Ejercicio8"
+        Me.Ejercicio8.Size = New System.Drawing.Size(75, 23)
+        Me.Ejercicio8.TabIndex = 7
+        Me.Ejercicio8.Text = "Ejercicio 8"
+        Me.Ejercicio8.UseVisualStyleBackColor = True
         '
-        'Button7
+        'Ejercicio10
         '
-        Me.Button7.Location = New System.Drawing.Point(23, 270)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(75, 23)
-        Me.Button7.TabIndex = 8
-        Me.Button7.Text = "Ejercicio 10"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.Ejercicio10.Location = New System.Drawing.Point(23, 270)
+        Me.Ejercicio10.Name = "Ejercicio10"
+        Me.Ejercicio10.Size = New System.Drawing.Size(75, 23)
+        Me.Ejercicio10.TabIndex = 8
+        Me.Ejercicio10.Text = "Ejercicio 10"
+        Me.Ejercicio10.UseVisualStyleBackColor = True
         '
-        'Button9
+        'Ejercicio11
         '
-        Me.Button9.Location = New System.Drawing.Point(167, 12)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(75, 23)
-        Me.Button9.TabIndex = 9
-        Me.Button9.Text = "Ejercicio 11"
-        Me.Button9.UseVisualStyleBackColor = True
+        Me.Ejercicio11.Location = New System.Drawing.Point(167, 12)
+        Me.Ejercicio11.Name = "Ejercicio11"
+        Me.Ejercicio11.Size = New System.Drawing.Size(75, 23)
+        Me.Ejercicio11.TabIndex = 9
+        Me.Ejercicio11.Text = "Ejercicio 11"
+        Me.Ejercicio11.UseVisualStyleBackColor = True
         '
-        'Button11
+        'Ejercicio13
         '
-        Me.Button11.Location = New System.Drawing.Point(167, 69)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(75, 23)
-        Me.Button11.TabIndex = 11
-        Me.Button11.Text = "Ejercicio 13"
-        Me.Button11.UseVisualStyleBackColor = True
+        Me.Ejercicio13.Location = New System.Drawing.Point(167, 69)
+        Me.Ejercicio13.Name = "Ejercicio13"
+        Me.Ejercicio13.Size = New System.Drawing.Size(75, 23)
+        Me.Ejercicio13.TabIndex = 11
+        Me.Ejercicio13.Text = "Ejercicio 13"
+        Me.Ejercicio13.UseVisualStyleBackColor = True
+        '
+        'Ejercicio14
+        '
+        Me.Ejercicio14.Location = New System.Drawing.Point(167, 99)
+        Me.Ejercicio14.Name = "Ejercicio14"
+        Me.Ejercicio14.Size = New System.Drawing.Size(75, 23)
+        Me.Ejercicio14.TabIndex = 12
+        Me.Ejercicio14.Text = "Ejercicio 14"
+        Me.Ejercicio14.UseVisualStyleBackColor = True
+        '
+        'Ejercicio15
+        '
+        Me.Ejercicio15.Location = New System.Drawing.Point(167, 128)
+        Me.Ejercicio15.Name = "Ejercicio15"
+        Me.Ejercicio15.Size = New System.Drawing.Size(75, 23)
+        Me.Ejercicio15.TabIndex = 13
+        Me.Ejercicio15.Text = "Ejercicio 15"
+        Me.Ejercicio15.UseVisualStyleBackColor = True
+        '
+        'Ejercicio12
+        '
+        Me.Ejercicio12.Location = New System.Drawing.Point(167, 41)
+        Me.Ejercicio12.Name = "Ejercicio12"
+        Me.Ejercicio12.Size = New System.Drawing.Size(75, 23)
+        Me.Ejercicio12.TabIndex = 14
+        Me.Ejercicio12.Text = "Ejercicio 12"
+        Me.Ejercicio12.UseVisualStyleBackColor = True
+        '
+        'Ejercicio4
+        '
+        Me.Ejercicio4.Location = New System.Drawing.Point(23, 99)
+        Me.Ejercicio4.Name = "Ejercicio4"
+        Me.Ejercicio4.Size = New System.Drawing.Size(75, 23)
+        Me.Ejercicio4.TabIndex = 15
+        Me.Ejercicio4.Text = "Ejercicio 4"
+        Me.Ejercicio4.UseVisualStyleBackColor = True
+        '
+        'Ejercicio9
+        '
+        Me.Ejercicio9.Location = New System.Drawing.Point(23, 241)
+        Me.Ejercicio9.Name = "Ejercicio9"
+        Me.Ejercicio9.Size = New System.Drawing.Size(75, 23)
+        Me.Ejercicio9.TabIndex = 16
+        Me.Ejercicio9.Text = "Ejercicio 9"
+        Me.Ejercicio9.UseVisualStyleBackColor = True
         '
         'Entrega_Arrays
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 329)
-        Me.Controls.Add(Me.Button11)
-        Me.Controls.Add(Me.Button9)
-        Me.Controls.Add(Me.Button7)
-        Me.Controls.Add(Me.Button8)
-        Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Ejercicio9)
+        Me.Controls.Add(Me.Ejercicio4)
+        Me.Controls.Add(Me.Ejercicio12)
+        Me.Controls.Add(Me.Ejercicio15)
+        Me.Controls.Add(Me.Ejercicio14)
+        Me.Controls.Add(Me.Ejercicio13)
+        Me.Controls.Add(Me.Ejercicio11)
+        Me.Controls.Add(Me.Ejercicio10)
+        Me.Controls.Add(Me.Ejercicio8)
+        Me.Controls.Add(Me.Ejercicio1)
+        Me.Controls.Add(Me.Ejercicio2)
+        Me.Controls.Add(Me.Ejercicio3)
+        Me.Controls.Add(Me.Ejercicio5)
+        Me.Controls.Add(Me.Ejercicio6)
+        Me.Controls.Add(Me.Ejercicio7)
         Me.Name = "Entrega_Arrays"
         Me.Text = "Entrega_Arrays"
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button8 As Button
-    Friend WithEvents Button7 As Button
-    Friend WithEvents Button9 As Button
-    Friend WithEvents Button11 As Button
+    Friend WithEvents Ejercicio7 As Button
+    Friend WithEvents Ejercicio6 As Button
+    Friend WithEvents Ejercicio5 As Button
+    Friend WithEvents Ejercicio3 As Button
+    Friend WithEvents Ejercicio2 As Button
+    Friend WithEvents Ejercicio1 As Button
+    Friend WithEvents Ejercicio8 As Button
+    Friend WithEvents Ejercicio10 As Button
+    Friend WithEvents Ejercicio11 As Button
+    Friend WithEvents Ejercicio13 As Button
+    Friend WithEvents Ejercicio14 As Button
+    Friend WithEvents Ejercicio15 As Button
+    Friend WithEvents Ejercicio12 As Button
+    Friend WithEvents Ejercicio4 As Button
+    Friend WithEvents Ejercicio9 As Button
 End Class

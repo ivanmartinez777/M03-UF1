@@ -4,8 +4,8 @@
         Dim vector(14) As Integer
         Dim n As Integer
         Dim cnt As Integer
-        Dim salida As String
-        Dim suma As String
+        Dim salida As String = ""
+        Dim suma As String = ""
 
 
 
@@ -33,8 +33,8 @@
         Dim vector(14) As Integer
         Dim n As Integer
         Dim cnt As Integer
-        Dim salida As String
-        Dim suma As String
+        Dim salida As String = ""
+        Dim suma As String = ""
         Dim r As New Random
         Dim min As Integer
         Dim max As Integer

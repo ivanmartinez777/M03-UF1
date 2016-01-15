@@ -1,7 +1,7 @@
 ﻿Public Class Ejercicio_8
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim nota As Integer
-        Dim resultado As String
+        Dim resultado As String = ""
 
         nota = CInt(TextBox1.Text)
 
