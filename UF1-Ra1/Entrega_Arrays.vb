@@ -484,4 +484,73 @@
         MessageBox.Show(" par" + salidap + vbNewLine + "impar" + salidai + vbNewLine + "suma" + salida)
 
     End Sub
+
+    Private Sub Ejercicio16_Click(sender As Object, e As EventArgs) Handles Ejercicio16.Click
+        Dim v(9) As Integer
+        Dim i(9) As Integer
+        Dim p(9) As Integer
+        Dim cnt As Integer
+        Dim cntp As Integer
+        Dim cnti As Integer
+        Dim salida As String = " "
+        Dim salidai As String = " "
+        Dim salidap As String = " "
+        For cnt = 0 To 9
+            v(cnt) = InputBox("introduce un numero")
+            If v(cnt) Mod 2 = 0 Then
+                p(cntp) = v(cnt)
+
+                salidap = salidap + p(cntp).ToString + " "
+                cntp += 1
+            Else
+                i(cnti) = v(cnt)
+
+                salidai = salidai + i(cnti).ToString + " "
+                cnti += 1
+            End If
+            salida = salida + v(cnt).ToString + " "
+        Next
+        MessageBox.Show(" El vector v es : " + salida + vbNewLine + "el vector p es : " + salidap + vbNewLine + "el vector i es : " + salidai + vbNewLine)
+    End Sub
+
+    Private Sub Ejercicio17_Click(sender As Object, e As EventArgs) Handles Ejercicio17.Click
+        Dim v(4) As Integer
+        Dim may(5) As Integer
+        Dim men(5) As Integer
+        Dim m As Integer
+        Dim cnt As Integer
+        Dim cntmen As Integer = 0
+        Dim cntmay As Integer = 0
+        Dim salidamen As String = " "
+        Dim salidamay As String = " "
+
+
+        For cnt = 0 To 4
+
+            v(cnt) = InputBox("Introducza una nota")
+
+            m = (m + v(cnt))
+        Next
+        m = m / 5
+        MessageBox.Show(m.ToString)
+        For cnt = 0 To 4
+            If v(cnt) < m Then
+                men(cntmen) = v(cnt)
+                salidamen = salidamen + men(cntmen).ToString + " "
+                cntmen = cntmen + 1
+            Else
+
+                may(cntmay) = v(cnt)
+                salidamay = salidamay + may(cntmay).ToString + " "
+                cntmay = cntmay + 1
+            End If
+
+        Next
+        MessageBox.Show("Los mayores son : " + salidamay + vbNewLine + "Los menores son : " + salidamen)
+
+    End Sub
+
+    Private Sub Ejercicio18_Click(sender As Object, e As EventArgs) Handles Ejercicio18.Click
+
+    End Sub
 End Class
