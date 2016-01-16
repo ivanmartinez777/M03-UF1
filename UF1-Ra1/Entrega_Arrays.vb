@@ -551,6 +551,35 @@
     End Sub
 
     Private Sub Ejercicio18_Click(sender As Object, e As EventArgs) Handles Ejercicio18.Click
+        Dim liminf() As Integer = {0, 1000000, 2500001, 3800001, 6000001}
+        Dim limsup() As Integer = {1000000, 2500000, 3800000, 6000000}
+        Dim pct() As Integer = {5, 12, 15, 22, 30}
+        Dim cnt As Integer
+        Dim salario As Integer
+        Dim npagas As Integer
+        Dim salarioanual As Integer
+        Dim salida As String = " "
+
+        salario = InputBox("Introduzca su salario mensual")
+        npagas = InputBox("Introduzca el numero de pagas que recibe anualmente")
+        salarioanual = salario * npagas
+
+        For cnt = 0 To 4
+            If salarioanual > liminf(cnt) And salarioanual < limsup(cnt) Then
+                salida = pct(cnt).ToString
+                Exit For
+
+
+            ElseIf salarioanual > limsup(3) Then
+                salida = pct(4).ToString
+                Exit For
+            End If
+
+
+
+        Next
+        MessageBox.Show("Con un salario de: " + salario.ToString + " " + "en " + npagas.ToString + " pagas anuales" + vbNewLine + "el porcentaje que deberás pagar es de : " + salida + "%")
+
 
     End Sub
 End Class
