@@ -15,7 +15,7 @@
 
         For i = 0 To 9
             For j = 0 To 9
-                matriz(i, j) = r.Next(0, 100)
+                matriz(i, j) = r.Next(0, 99)
                 salida = salida + " " + matriz(i, j).ToString
             Next
             salida = salida + vbNewLine
@@ -30,7 +30,7 @@
                 sumaF = sumaF + matriz(i, j)
 
             Next
-            salidaF = salidaF + sumaF.ToString + " "
+            salidaF = salidaF + "fila" + i.ToString + "= " + sumaF.ToString + " "
 
         Next
 
@@ -41,7 +41,7 @@
                 sumaC = sumaC + matriz(i, j)
 
             Next
-            salidaC = salidaC + sumaC.ToString + " "
+            salidaC = salidaC + "columna" + j.ToString + "= " + sumaC.ToString + " "
 
         Next
 
@@ -58,9 +58,9 @@
         For i = 0 To 4
             For j = 0 To 4
                 If i = j Then
-                    diagonal(i, j) = 0
-                Else
                     diagonal(i, j) = 1
+                Else
+                    diagonal(i, j) = 0
                 End If
                 salida = salida + diagonal(i, j).ToString + " "
             Next
@@ -94,15 +94,15 @@
         Dim cnt As Integer
         Dim salida As String = ""
         Dim cnt0 As Integer = 0
+        Dim r As New Random
 
         For cnt = 0 To tabla.Length - 1
-            Randomize()
-            tabla(cnt) = Rnd() * 100
+            tabla(cnt) = r.Next(0, 100)
 
         Next
         For cnt = 0 To 19
             If tabla(cnt) > 30 Then
-                salida = salida + " " + tabla(cnt).ToString + " " + cnt.ToString + " " + Environment.NewLine
+                salida = salida + " " + tabla(cnt).ToString + " " + " cuya posición en la tabla es " + cnt.ToString + " " + Environment.NewLine
             Else
                 cnt0 = cnt0 + 1
             End If
@@ -121,16 +121,14 @@
         Dim salida As String = ""
         Dim suma As Integer
         Dim r As New Random
-        Dim min As Integer
-        Dim max As Integer
 
-        min = InputBox("introduce el número menor")
-        max = InputBox("introduce el número mayor")
+
+
 
 
 
         For cnt = 0 To 14
-            vector(cnt) = r.Next(min, max)
+            vector(cnt) = r.Next(0, 9)
             salida = salida + " " + vector(cnt).ToString + " " + Environment.NewLine
         Next
 
@@ -141,7 +139,7 @@
 
         Next
 
-        MessageBox.Show(salida.ToString + suma.ToString)
+        MessageBox.Show(salida.ToString + vbNewLine + "La suma de los " + n.ToString + " primeros números es: " + suma.ToString)
 
     End Sub
 
@@ -273,7 +271,7 @@
 
         For cnt = 1 To 4
             suma = suma + vector(cnt)
-            salida = salida + " " + suma.ToString + " " + vbNewLine
+            salida = salida + "La suma de los " + (cnt + 1).ToString + " primeros números es: " + suma.ToString + " " + vbNewLine
 
         Next
 
@@ -436,7 +434,7 @@
         Next
 
 
-        MessageBox.Show(salida + vbNewLine + salidades + vbNewLine)
+        MessageBox.Show(salida + vbNewLine + "Los números mayores que 25 son: " + salidades + vbNewLine)
     End Sub
 
     Private Sub Ejercicio9_Click(sender As Object, e As EventArgs) Handles Ejercicio9.Click
@@ -517,7 +515,7 @@
         Dim v(4) As Integer
         Dim may(5) As Integer
         Dim men(5) As Integer
-        Dim m As Integer
+        Dim m As Double
         Dim cnt As Integer
         Dim cntmen As Integer = 0
         Dim cntmay As Integer = 0
@@ -532,7 +530,7 @@
             m = (m + v(cnt))
         Next
         m = m / 5
-        MessageBox.Show(m.ToString)
+        MessageBox.Show("la media es " + m.ToString)
         For cnt = 0 To 4
             If v(cnt) < m Then
                 men(cntmen) = v(cnt)
@@ -579,6 +577,28 @@
 
         Next
         MessageBox.Show("Con un salario de: " + salario.ToString + " " + "en " + npagas.ToString + " pagas anuales" + vbNewLine + "el porcentaje que deberás pagar es de : " + salida + "%")
+
+
+    End Sub
+
+    Private Sub Ejercicio19_Click(sender As Object, e As EventArgs) Handles Ejercicio19.Click
+        Dim nombre(3) As String
+        Dim notas(1, 2) As Integer
+        Dim cnt As Integer
+        Dim i, j As Integer
+
+        For cnt = 0 To nombre.Length
+            nombre(cnt) = InputBox("introduzca un nombre")
+        Next
+
+        For i = 0 To nombre.Length
+            For j = 0 To 2
+                notas(i, j) = InputBox("introduzca nota del parcial")
+            Next
+        Next
+
+
+
 
 
     End Sub
