@@ -530,17 +530,30 @@
         Dim salida As String = ""
         Dim Aprobado As String = " "
         Dim suspendido As String = " "
+        Dim nmax As Integer = notas(0, 0)
+        Dim almax As String = " "
 
         For i = 0 To 2
             nombre(i) = InputBox("Introduce un nombre")
 
             For j = 0 To 1
                 notas(i, j) = InputBox("nota")
+                If nmax < notas(i, j) Then
+                    nmax = notas(i, j)
+                End If
             Next
 
 
         Next
+        For i = 0 To nombre.Length - 1
+            For j = 0 To 1
+                If notas(i, j) = nmax Then
+                    almax = almax + nombre(i) + vbNewLine
+                End If
 
+            Next
+
+        Next
 
         For i = 0 To 2
             For j = 0 To 1
@@ -575,6 +588,8 @@
 
         Next
 
-        MessageBox.Show("Aprobados:  " + vbNewLine + Aprobado + vbNewLine + "Suspendidos: " + vbNewLine + suspendido + vbNewLine)
+
+        MessageBox.Show("Aprobados:  " + vbNewLine + Aprobado + vbNewLine + "Suspendidos: " + vbNewLine + suspendido + vbNewLine + "La nota máxima es: " + nmax.ToString + vbNewLine + "Alumnos con la mejor nota: " + vbNewLine + almax
+                        )
     End Sub
 End Class
