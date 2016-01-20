@@ -190,71 +190,8 @@
         MessageBox.Show(salida)
     End Sub
 
-    Private Sub Button9_Click(sender As Object, e As EventArgs) 
-        Dim vector(9) As Integer
-        Dim cnt As Integer
-        Dim suma As Integer
-
-        Dim par(9) As Integer
-        Dim impar(9) As Integer
-        Dim cntp As Integer
-        Dim cnti As Integer
 
 
-
-        For cnt = 0 To 9
-            vector(cnt) = InputBox("Introduce un número")
-
-
-        Next
-
-        For cnt = 0 To 9
-            If vector(cnt) Mod 2 = 0 Then
-                par(cntp) = vector(cnt)
-                cntp = cntp + 1
-
-            ElseIf vector(cnt) Mod 2 <> 0 Then
-
-
-                impar(cnti) = vector(cnt)
-                cnti = cnti + 1
-
-
-            End If
-
-        Next
-
-        MessageBox.Show(impar(cnti))
-
-
-
-        For cnt = 0 To 9
-            suma = par(cntp) + impar(cnti)
-
-            MessageBox.Show(suma)
-        Next
-
-
-
-    End Sub
-
-    Private Sub Button10_Click(sender As Object, e As EventArgs) 
-        Dim vector(9) As Integer
-        Dim cnt As Integer = 0
-        Dim suma As Integer = 0
-        Dim salida As String = ""
-
-        For cnt = 0 To 9
-            vector(cnt) = InputBox("Introduce un número")
-        Next
-
-        For cnt = 0 To 9
-
-        Next
-
-
-        MessageBox.Show(suma)
-    End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Ejercicio10.Click
         Dim vector(4) As Integer
@@ -582,24 +519,62 @@
     End Sub
 
     Private Sub Ejercicio19_Click(sender As Object, e As EventArgs) Handles Ejercicio19.Click
-        Dim nombre(3) As String
-        Dim notas(1, 2) As Integer
-        Dim cnt As Integer
-        Dim i, j As Integer
+        Dim nombre(2) As String
+        Dim notas(nombre.Length, 1) As Double
+        Dim i As Integer
+        Dim j As Integer
+        Dim final(nombre.Length) As Double
+        Dim suma As Double
+        Dim sumam As Double
+        Dim media(nombre.Length) As Double
+        Dim salida As String = ""
+        Dim Aprobado As String = " "
+        Dim suspendido As String = " "
 
-        For cnt = 0 To nombre.Length
-            nombre(cnt) = InputBox("introduzca un nombre")
-        Next
+        For i = 0 To 2
+            nombre(i) = InputBox("Introduce un nombre")
 
-        For i = 0 To nombre.Length
-            For j = 0 To 2
-                notas(i, j) = InputBox("introduzca nota del parcial")
+            For j = 0 To 1
+                notas(i, j) = InputBox("nota")
             Next
+
+
         Next
 
 
+        For i = 0 To 2
+            For j = 0 To 1
+                sumam = sumam + (notas(i, j))
+                If j = 0 Then
+                    notas(i, j) = notas(i, j) * 0.4
+                Else
+                    notas(i, j) = notas(i, j) * 0.6
+                End If
+
+                suma = suma + notas(i, j)
+                final(i) = suma
 
 
+            Next
+            media(i) = sumam / 2
+            salida = salida + "La nota final de " + (nombre(i)) + " es " + final(i).ToString + " y la media es de " + media(i).ToString + vbNewLine
+            suma = 0
+            sumam = 0
+        Next
 
+        MessageBox.Show(salida)
+
+        For i = 0 To nombre.Length - 1
+
+            If final(i) >= 5 Then
+                Aprobado = Aprobado + nombre(i) + vbNewLine
+            Else
+                suspendido = suspendido + nombre(i) + vbNewLine
+
+            End If
+
+        Next
+
+        MessageBox.Show("Aprobados:  " + vbNewLine + Aprobado + vbNewLine + "Suspendidos: " + vbNewLine + suspendido + vbNewLine)
     End Sub
 End Class
