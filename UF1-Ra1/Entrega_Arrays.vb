@@ -530,38 +530,34 @@
         Dim salida As String = ""
         Dim Aprobado As String = " "
         Dim suspendido As String = " "
-        Dim nmax As Integer = notas(0, 0)
+        Dim nmax As Double = final(0)
         Dim almax As String = " "
+        Dim parcial1 As Integer
+
 
         For i = 0 To 2
             nombre(i) = InputBox("Introduce un nombre")
 
             For j = 0 To 1
                 notas(i, j) = InputBox("nota")
-                If nmax < notas(i, j) Then
-                    nmax = notas(i, j)
-                End If
+
+
             Next
 
 
         Next
-        For i = 0 To nombre.Length - 1
-            For j = 0 To 1
-                If notas(i, j) = nmax Then
-                    almax = almax + nombre(i) + vbNewLine
-                End If
 
-            Next
 
-        Next
+        parcial1 = InputBox("introduce el porcentaje del primer parcial dentro de la nota final")
+
 
         For i = 0 To 2
             For j = 0 To 1
                 sumam = sumam + (notas(i, j))
                 If j = 0 Then
-                    notas(i, j) = notas(i, j) * 0.4
+                    notas(i, j) = notas(i, j) * (parcial1 / 100)
                 Else
-                    notas(i, j) = notas(i, j) * 0.6
+                    notas(i, j) = notas(i, j) * ((100 - parcial1) / 100)
                 End If
 
                 suma = suma + notas(i, j)
@@ -578,6 +574,19 @@
         MessageBox.Show(salida)
 
         For i = 0 To nombre.Length - 1
+            If nmax < final(i) Then
+                nmax = final(i)
+            End If
+
+        Next
+        For i = 0 To nombre.Length - 1
+            If final(i) = nmax Then
+                almax = almax + nombre(i) + vbNewLine
+            End If
+        Next
+
+
+        For i = 0 To nombre.Length - 1
 
             If final(i) >= 5 Then
                 Aprobado = Aprobado + nombre(i) + vbNewLine
@@ -591,5 +600,40 @@
 
         MessageBox.Show("Aprobados:  " + vbNewLine + Aprobado + vbNewLine + "Suspendidos: " + vbNewLine + suspendido + vbNewLine + "La nota máxima es: " + nmax.ToString + vbNewLine + "Alumnos con la mejor nota: " + vbNewLine + almax
                         )
+    End Sub
+
+
+
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim v(4) As Integer
+        Dim w(4) As Integer
+        Dim x(9) As Integer
+        Dim cnt As Integer
+        Dim cntw As Integer = 0
+        Dim cntv As Integer = 0
+        Dim salida As String = " "
+
+        For cnt = 0 To 4
+            v(cnt) = InputBox("valor para v")
+
+        Next
+
+        For cnt = 0 To 4
+
+            w(cnt) = InputBox("valor para w")
+        Next
+
+        For cnt = 0 To 9
+            If cnt Mod 2 = 0 Then
+                x(cnt) = v(cntv)
+                cntv += 1
+            Else
+                x(cnt) = w(cntw)
+                cntw += 1
+            End If
+            salida = salida + x(cnt).ToString
+
+        Next
+        MessageBox.Show(salida)
     End Sub
 End Class

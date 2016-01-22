@@ -121,4 +121,35 @@
 
         MessageBox.Show(salida1 + vbNewLine + salida2 + vbNewLine + salida3 + vbNewLine)
     End Sub
+
+    Private Sub Ejercicio4_Click(sender As Object, e As EventArgs) Handles Ejercicio4.Click
+        Dim numero As Integer
+        Dim tabla(10, 10) As Integer
+        Dim r As New Random
+        Dim cnt As Integer = 0
+        Dim i, j As Integer
+        Dim salida As String = " "
+
+        numero = r.Next(0, 10)
+        MessageBox.Show("el número que buscará es " + numero.ToString)
+
+        For i = 0 To 10
+            For j = 0 To 10
+                tabla(i, j) = r.Next(0, 10)
+                salida = salida + tabla(i, j).ToString + "  "
+            Next
+            salida = salida + vbNewLine
+        Next
+        MessageBox.Show(salida)
+
+        For i = 0 To 10
+            For j = 0 To 10
+                If tabla(i, j) = numero Then
+                    cnt = cnt + 1
+                End If
+            Next
+        Next
+        MessageBox.Show("el número sale " + cnt.ToString + " veces")
+
+    End Sub
 End Class

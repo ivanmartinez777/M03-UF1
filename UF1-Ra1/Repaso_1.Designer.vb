@@ -26,6 +26,7 @@ Partial Class Repaso_1
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.Ejercicio4 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -64,11 +65,21 @@ Partial Class Repaso_1
         Me.Button4.Text = "Ejercicio 3 profe"
         Me.Button4.UseVisualStyleBackColor = True
         '
+        'Ejercicio4
+        '
+        Me.Ejercicio4.Location = New System.Drawing.Point(12, 111)
+        Me.Ejercicio4.Name = "Ejercicio4"
+        Me.Ejercicio4.Size = New System.Drawing.Size(75, 23)
+        Me.Ejercicio4.TabIndex = 4
+        Me.Ejercicio4.Text = "Ejercicio 4"
+        Me.Ejercicio4.UseVisualStyleBackColor = True
+        '
         'Repaso_1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.Controls.Add(Me.Ejercicio4)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
@@ -83,4 +94,5 @@ Partial Class Repaso_1
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
+    Friend WithEvents Ejercicio4 As Button
 End Class
