@@ -38,17 +38,38 @@
             np = r.Next(1, 5)
                 Select Case np
                     Case 1
-                        i = i - 1
-                        MessageBox.Show("La hormiga da un paso arriba")
-                    Case 2
-                        i = i + 1
+                    i = i - 1
+                    MessageBox.Show("La hormiga da un paso arriba")
+                    If i < 0 Then
+                        MessageBox.Show("La hormiga esta harta de pasear y se va a su casa")
+                        Exit Do
+                    End If
+
+                Case 2
+                    i = i + 1
                     MessageBox.Show("La hormiga da un paso a abajo")
+                    If i > 11 Then
+                        MessageBox.Show("La hormiga esta harta de pasear y se va a su casa")
+                        Exit Do
+                    End If
+
+
                 Case 3
-                        j = j - 1
-                        MessageBox.Show("La hormga da un paso a la izquierda")
-                    Case 4
-                        j = j + 1
+                    j = j - 1
+                    MessageBox.Show("La hormga da un paso a la izquierda")
+                    If j < 0 Then
+                        MessageBox.Show("La hormiga esta harta de pasear y se va a su casa")
+                        Exit Do
+                    End If
+
+                Case 4
+                    j = j + 1
                     MessageBox.Show("La hormiga da un a la derecha")
+                    If i > 11 Then
+                        MessageBox.Show("La hormiga esta harta de pasear y se va a su casa")
+                        Exit Do
+                    End If
+
             End Select
             Loop
 
