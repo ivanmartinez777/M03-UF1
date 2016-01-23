@@ -6,7 +6,7 @@
         Dim i, j As Integer
         Dim tablero(10, 10) As Integer
         Dim ng As Integer
-        Dim cnte As Integer
+        Dim cnte As Integer = 0
 
 
         For i = 0 To 9
@@ -31,47 +31,88 @@
 
         i = r.Next(0, 11)
         j = r.Next(0, 11)
-
+        np = r.Next(1, 5)
 
         Do
-            MessageBox.Show(tablero(i, j).ToString + "   " + "i = " + i.ToString + "  j = " + j.ToString)
-            np = r.Next(1, 5)
+            If cnte > 0 Then
+                MessageBox.Show(tablero(i, j).ToString + "   " + "i = " + i.ToString + "  j = " + j.ToString)
+                np = r.Next(1, 5)
                 Select Case np
                     Case 1
-                    i = i - 1
-                    MessageBox.Show("La hormiga da un paso arriba")
-                    If i < 0 Then
-                        MessageBox.Show("La hormiga esta harta de pasear y se va a su casa")
-                        Exit Do
-                    End If
+                        i = i - 1
+                        MessageBox.Show("La hormiga da un paso arriba")
+                        If i < 0 Then
+                            MessageBox.Show("La hormiga esta harta de pasear y se va a su casa")
+                            Exit Do
+                        End If
 
-                Case 2
-                    i = i + 1
-                    MessageBox.Show("La hormiga da un paso a abajo")
-                    If i > 11 Then
-                        MessageBox.Show("La hormiga esta harta de pasear y se va a su casa")
-                        Exit Do
-                    End If
+                    Case 2
+                        i = i + 1
+                        MessageBox.Show("La hormiga da un paso a abajo")
+                        If i > 10 Then
+                            MessageBox.Show("La hormiga esta harta de pasear y se va a su casa")
+                            Exit Do
+                        End If
 
 
-                Case 3
-                    j = j - 1
-                    MessageBox.Show("La hormga da un paso a la izquierda")
-                    If j < 0 Then
-                        MessageBox.Show("La hormiga esta harta de pasear y se va a su casa")
-                        Exit Do
-                    End If
+                    Case 3
+                        j = j - 1
+                        MessageBox.Show("La hormga da un paso a la izquierda")
+                        If j < 0 Then
+                            MessageBox.Show("La hormiga esta harta de pasear y se va a su casa")
+                            Exit Do
+                        End If
 
-                Case 4
-                    j = j + 1
-                    MessageBox.Show("La hormiga da un a la derecha")
-                    If i > 11 Then
-                        MessageBox.Show("La hormiga esta harta de pasear y se va a su casa")
-                        Exit Do
-                    End If
+                    Case 4
+                        j = j + 1
+                        MessageBox.Show("La hormiga da un a la derecha")
+                        If j > 10 Then
+                            MessageBox.Show("La hormiga esta harta de pasear y se va a su casa")
+                            Exit Do
+                        End If
 
-            End Select
-            Loop
+                End Select
+                cnte = cnte - 1
+            Else
+                MessageBox.Show(tablero(i, j).ToString + "   " + "i = " + i.ToString + "  j = " + j.ToString)
+
+                Select Case np
+                    Case 1
+                        i = i - 1
+                        MessageBox.Show("La hormiga da un paso arriba")
+                        If i < 0 Then
+                            MessageBox.Show("La hormiga esta harta de pasear y se va a su casa")
+                            Exit Do
+                        End If
+
+                    Case 2
+                        i = i + 1
+                        MessageBox.Show("La hormiga da un paso a abajo")
+                        If i > 10 Then
+                            MessageBox.Show("La hormiga esta harta de pasear y se va a su casa")
+                            Exit Do
+                        End If
+
+
+                    Case 3
+                        j = j - 1
+                        MessageBox.Show("La hormga da un paso a la izquierda")
+                        If j < 0 Then
+                            MessageBox.Show("La hormiga esta harta de pasear y se va a su casa")
+                            Exit Do
+                        End If
+
+                    Case 4
+                        j = j + 1
+                        MessageBox.Show("La hormiga da un a la derecha")
+                        If j > 10 Then
+                            MessageBox.Show("La hormiga esta harta de pasear y se va a su casa")
+                            Exit Do
+                        End If
+
+                End Select
+            End If
+        Loop
 
     End Sub
     Public Class borrachera
