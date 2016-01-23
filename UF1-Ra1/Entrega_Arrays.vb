@@ -636,4 +636,161 @@
         Next
         MessageBox.Show(salida)
     End Sub
+
+    Private Sub Ejercicio20_Click(sender As Object, e As EventArgs) Handles Ejercicio20.Click
+        Dim tablero(9, 9) As Integer
+        Dim i, j As Integer
+        Dim ng As Integer
+        Dim salida As String = " "
+        Dim r As New Random
+        Dim cnte As Integer = 0
+        Dim np As Integer = 0
+
+
+        For i = 0 To 9
+            For j = 0 To 9
+                ng = r.Next(0, 10)
+                If ng < 5 Then
+                    tablero(i, j) = 0
+                ElseIf ng >= 5 And ng < 7 Then
+                    tablero(i, j) = 1
+                ElseIf ng >= 7 And ng < 9 Then
+                    tablero(i, j) = 2
+                Else
+                    tablero(i, j) = 3
+                End If
+
+                salida = salida + tablero(i, j).ToString + "  "
+
+
+            Next
+            salida = salida + vbNewLine
+
+        Next
+        MessageBox.Show(salida)
+
+        i = r.Next(0, 10)
+        j = r.Next(0, 10)
+        Do
+            If tablero(i, j) = 0 And cnte > 0 Then
+                Do Until cnte = 0
+                    np = r.Next(0, 4)
+                    Select Case np
+                        Case 0
+                            i = i - 1
+                            MessageBox.Show("La hormiga da un paso hacia arriba")
+
+                        Case 1
+
+                            i = i + 1
+                            MessageBox.Show("la hormiga da un paso hacia abajo")
+
+                        Case 2
+
+                            j = j - 1
+                            MessageBox.Show("La hormiga da un paso hacia la izquierda")
+
+                        Case 3
+
+                            j = j + 1
+                            MessageBox.Show("La hormiga da un paso hacia la derecha")
+
+                            cnte = cnte - 1
+
+                    End Select
+
+                    cnte = cnte - 1
+                Loop
+            ElseIf tablero(i, j) = 1 And cnte > 0 Then
+                Do Until cnte = 0
+                    np = r.Next(0, 4)
+                    Select Case np
+                        Case 0
+                            i = i - 1
+                            MessageBox.Show("La hormiga da un paso hacia arriba")
+
+                        Case 1
+
+                            i = i + 1
+                            MessageBox.Show("la hormiga da un paso hacia abajo")
+
+                        Case 2
+
+                            j = j - 1
+                            MessageBox.Show("La hormiga da un paso hacia la izquierda")
+
+                        Case 3
+
+                            j = j + 1
+                            MessageBox.Show("La hormiga da un paso hacia la derecha")
+
+                    End Select
+
+                    cnte = cnte - 1
+                    ng = 0
+
+                Loop
+            ElseIf tablero(i, j) = 1 And cnte = 0 Then
+                ng = 0
+
+            ElseIf tablero(i, j) = 2 And cnte > 1 Then
+                MessageBox.Show("La hormgia borracha ademas de llevar un ciego espectacular ha muerto envenenada")
+                Exit Do
+
+            ElseIf tablero(i, j) = 3 Then
+                ng = 0
+                cnte = cnte + 4
+                Do Until cnte = 0
+                    np = r.Next(0, 4)
+                    Select Case np
+                        Case 0
+                            i = i - 1
+                            MessageBox.Show("La hormiga da un paso hacia arriba")
+
+                        Case 1
+
+                            i = i + 1
+                            MessageBox.Show("la hormiga da un paso hacia abajo")
+
+                        Case 2
+
+                            j = j - 1
+                            MessageBox.Show("La hormiga da un paso hacia la izquierda")
+
+                        Case 3
+
+                            j = j + 1
+                            MessageBox.Show("La hormiga da un paso hacia la derecha")
+
+
+                            cnte = cnte - 1
+                    End Select
+                    np = r.Next(1, 5)
+                    Select Case np
+                        Case 1
+                            i = i - 1
+                            MessageBox.Show("La hormiga da un paso arriba")
+                        Case 2
+                            i = i + 1
+                            MessageBox.Show("La hormiga da un paso a la derecha")
+                        Case 3
+                            j = j - 1
+                            MessageBox.Show("La hormga da un paso a la izquierda")
+                        Case 4
+                            j = j + 1
+                            MessageBox.Show("La hormiga da un paso abajo")
+                    End Select
+
+                Loop
+
+            End If
+            If np > 2 Then
+                j = j - np
+            Else
+                i = i - np
+            End If
+
+        Loop
+
+    End Sub
 End Class
