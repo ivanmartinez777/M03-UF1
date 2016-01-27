@@ -9,8 +9,8 @@
         Dim cnte As Integer = 0
 
 
-        For i = 0 To 9
-            For j = 0 To 9
+        For i = 0 To 10
+            For j = 0 To 10
                 ng = r.Next(0, 10)
                 'If ng < 4 Then
                 tablero(i, j) = 0 '
@@ -44,8 +44,8 @@
                         i = i - 1
 
                         If i < 0 Then
-                            MessageBox.Show("La hormiga esta harta de pasear y se va a su casa")
-                            Exit Do
+                            i = 10
+
                         End If
                         Select Case tablero(i, j)
                             Case 0
@@ -67,10 +67,7 @@
                     Case 2
                         i = i + 1
 
-                        If i > 10 Then
-                            MessageBox.Show("La hormiga esta harta de pasear y se va a su casa")
-                            Exit Do
-                        End If
+                        i = i Mod 11
                         Select Case tablero(i, j)
                             Case 0
                                 salida = "nada"
@@ -92,8 +89,7 @@
                         j = j - 1
 
                         If j < 0 Then
-                            MessageBox.Show("La hormiga esta harta de pasear y se va a su casa")
-                            Exit Do
+                            j = 10
                         End If
                         Select Case tablero(i, j)
                             Case 0
@@ -114,10 +110,7 @@
                     Case 4
                         j = j + 1
 
-                        If j > 10 Then
-                            MessageBox.Show("La hormiga esta harta de pasear y se va a su casa")
-                            Exit Do
-                        End If
+                        j = j Mod 11
                         Select Case tablero(i, j)
                             Case 0
                                 salida = "nada"
@@ -145,8 +138,7 @@
                         i = i - 1
 
                         If i < 0 Then
-                            MessageBox.Show("La hormiga esta harta de pasear y se va a su casa")
-                            Exit Do
+                            i = 10
                         End If
                         Select Case tablero(i, j)
                             Case 0
@@ -167,10 +159,7 @@
                     Case 2
                         i = i + 1
 
-                        If i > 10 Then
-                            MessageBox.Show("La hormiga esta harta de pasear y se va a su casa")
-                            Exit Do
-                        End If
+                        i = i Mod 11
                         Select Case tablero(i, j)
                             Case 0
                                 salida = "nada"
@@ -191,8 +180,7 @@
                         j = j - 1
 
                         If j < 0 Then
-                            MessageBox.Show("La hormiga esta harta de pasear y se va a su casa")
-                            Exit Do
+                            j = 10
                         End If
                         Select Case tablero(i, j)
                             Case 0
@@ -212,10 +200,7 @@
                     Case 4
                         j = j + 1
 
-                        If j > 10 Then
-                            MessageBox.Show("La hormiga esta harta de pasear y se va a su casa")
-                            Exit Do
-                        End If
+                        j = j Mod 11
                         Select Case tablero(i, j)
                             Case 0
                                 salida = "nada"
@@ -234,13 +219,13 @@
                 End Select
             End If
         Loop
-
+        For i = 0 To 10
+            For j = 0 To 10
+                salida = salida + tablero(i, j).ToString + "  "
+            Next
+            salida = salida + vbNewLine
+        Next
+        MessageBox.Show(salida)
     End Sub
-    Public Class borrachera
-        Dim cnte As Integer
-
-
-
-    End Class
 
 End Class
