@@ -300,6 +300,12 @@
     <Compile Include="Form2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="hormiga.Designer.vb">
+      <DependentUpon>hormiga.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hormiga.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="IntroducciónYMenor.Designer.vb">
       <DependentUpon>IntroducciónYMenor.vb</DependentUpon>
     </Compile>
@@ -511,6 +517,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hormiga.resx">
+      <DependentUpon>hormiga.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IntroducciónYMenor.resx">
       <DependentUpon>IntroducciónYMenor.vb</DependentUpon>

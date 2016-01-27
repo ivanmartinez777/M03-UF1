@@ -43,8 +43,8 @@
                     Case 1
                         i = i - 1
 
-                        If i < 0 Then
-                            i = 10
+                         If i < 0 Then
+                        i = 10
 
                         End If
                         Select Case tablero(i, j)
