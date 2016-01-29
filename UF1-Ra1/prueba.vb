@@ -1,22 +1,26 @@
 ﻿Public Class prueba
+    Dim salida As String = " "
+    Dim hi, hj As Integer
+    Dim tablero(10, 10) As Integer
+    Dim recorrido(10, 10) As String
+    Dim rsalida As String = " "
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim np As Integer
         Dim r As New Random
-        Dim salida As String = " "
         Dim i, j As Integer
-        Dim tablero(10, 10) As Integer
         Dim ng As Integer
         Dim cnte As Integer = 0
+
 
 
         For i = 0 To 10
             For j = 0 To 10
                 ng = r.Next(0, 10)
-                'If ng < 4 Then
-                tablero(i, j) = 0 '
-                If ng >= 0 And ng < 5 Then
+
+                If ng >= 0 And ng < 3 Then
                     tablero(i, j) = 1
-                ElseIf ng >= 5 And ng < 8 Then
+                ElseIf ng >= 3 And ng < 8 Then
                     tablero(i, j) = 2
                 Else
                     tablero(i, j) = 3
@@ -29,203 +33,232 @@
         salida = salida + vbNewLine
         MessageBox.Show(salida)
 
-        i = r.Next(0, 11)
-        j = r.Next(0, 11)
+
+
+
+
+
+        Me.paseo()
+
+        hi = r.Next(0, 11)
+        hj = r.Next(0, 11)
         np = r.Next(1, 5)
 
+        recorrido(hi, hj) = "@"
+
+
         Do
-            MessageBox.Show("i = " + i.ToString + "  j = " + j.ToString)
+            MessageBox.Show("hi = " + hi.ToString + "  hj = " + hj.ToString)
 
             If cnte > 0 Then
                 MessageBox.Show("Vaya pedo lleva la hormiga. Le quedan " + cnte.ToString + " pasos para volver en si")
                 np = r.Next(1, 5)
                 Select Case np
                     Case 1
-                        i = i - 1
+                        hi = hi - 1
 
-                         If i < 0 Then
-                        i = 10
+                        If hi < 0 Then
+                            hi = 10
 
                         End If
-                        Select Case tablero(i, j)
+                        Select Case tablero(hi, hj)
                             Case 0
                                 salida = "nada"
 
                             Case 1
                                 salida = "azucar. Se lo come y sigue su camino"
-                                tablero(i, j) = 0
+                                tablero(hi, hj) = 0
                             Case 2
                                 salida = "azucar y vino. Se lo come y sigue su camino"
-                                tablero(i, j) = 0
+                                tablero(hi, hj) = 0
                                 cnte = cnte + 2
                             Case 3
                                 MessageBox.Show("La hormiga borracha, ha comido veneno. R.I.P hormiga")
                                 Exit Do
 
                         End Select
-                        MessageBox.Show("La hormiga da un paso arriba y se encuentra ... " + salida)
+                        MessageBox.Show("La hormiga da un paso arriba y encuentra ... " + salida)
                     Case 2
-                        i = i + 1
+                        hi = hi + 1
 
-                        i = i Mod 11
-                        Select Case tablero(i, j)
+                        hi = hi Mod 11
+                        Select Case tablero(hi, hj)
                             Case 0
                                 salida = "nada"
                             Case 1
                                 salida = "azucar. Se lo come y sigue su camino"
-                                tablero(i, j) = 0
+                                tablero(hi, hj) = 0
                             Case 2
                                 salida = "azucar y vino. Se lo come y sigue su camino"
                                 cnte = cnte + 2
-                                tablero(i, j) = 0
+                                tablero(hi, hj) = 0
                             Case 3
                                 MessageBox.Show("La hormiga borracha, ha comido veneno. R.I.P hormiga")
                                 Exit Do
 
                         End Select
-                        MessageBox.Show("La hormiga da un paso a abajo y se encuentra... " + salida)
+                        MessageBox.Show("La hormiga da un paso a abajo y encuentra... " + salida)
 
                     Case 3
-                        j = j - 1
+                        hj = hj - 1
 
-                        If j < 0 Then
-                            j = 10
+                        If hj < 0 Then
+                            hj = 10
                         End If
-                        Select Case tablero(i, j)
+                        Select Case tablero(hi, hj)
                             Case 0
                                 salida = "nada"
                             Case 1
                                 salida = "azucar. Se lo come y sigue su camino"
-                                tablero(i, j) = 0
+                                tablero(hi, hj) = 0
                             Case 2
                                 salida = "azucar y vino. Se lo come y sigue su camino"
                                 cnte = cnte + 2
-                                tablero(i, j) = 0
+                                tablero(hi, hj) = 0
                             Case 3
                                 MessageBox.Show("La hormiga borracha, ha comido veneno. R.I.P hormiga")
                                 Exit Do
 
                         End Select
-                        MessageBox.Show("La hormiga da un paso a la izquierda y se encuentra..." + salida)
+                        MessageBox.Show("La hormiga da un paso a la izquierda y encuentra..." + salida)
                     Case 4
-                        j = j + 1
+                        hj = hj + 1
 
-                        j = j Mod 11
-                        Select Case tablero(i, j)
+                        hj = hj Mod 11
+                        Select Case tablero(hi, hj)
                             Case 0
                                 salida = "nada"
                             Case 1
                                 salida = "azucar. Se lo come y sigue su camino"
-                                tablero(i, j) = 0
+                                tablero(hi, hj) = 0
                             Case 2
                                 salida = "azucar y vino. Se lo come y sigue su camino"
                                 cnte = cnte + 2
-                                tablero(i, j) = 0
+                                tablero(hi, hj) = 0
                             Case 3
                                 MessageBox.Show("La hormiga borracha, ha comido veneno. R.I.P hormiga")
                                 Exit Do
 
                         End Select
-                        MessageBox.Show("La hormiga da un paso a la derecha y se encuentra ..." + salida)
+                        MessageBox.Show("La hormiga da un paso a la derecha y encuentra ..." + salida)
                 End Select
                 cnte = cnte - 1
-
+                recorrido(hi, hj) = "@"
             Else
 
 
                 Select Case np
                     Case 1
-                        i = i - 1
+                        hi = hi - 1
 
-                        If i < 0 Then
-                            i = 10
+                        If hi < 0 Then
+                            hi = 10
                         End If
-                        Select Case tablero(i, j)
+                        Select Case tablero(hi, hj)
                             Case 0
                                 salida = "nada"
                             Case 1
                                 salida = "azucar. Se lo come y sigue su camino"
-                                tablero(i, j) = 0
+                                tablero(hi, hj) = 0
                             Case 2
                                 salida = "azucar y vino. Se lo come y sigue su camino"
-                                tablero(i, j) = 0
+                                tablero(hi, hj) = 0
                                 cnte = cnte + 2
                             Case 3
                                 salida = "azucar y veneno. No se lo come"
 
 
                         End Select
-                        MessageBox.Show("La hormiga da un paso arriba y se encuentra ... " + salida)
+                        MessageBox.Show("La hormiga da un paso arriba y encuentra ... " + salida)
                     Case 2
-                        i = i + 1
+                        hi = hi + 1
 
-                        i = i Mod 11
-                        Select Case tablero(i, j)
+                        hi = hi Mod 11
+                        Select Case tablero(hi, hj)
                             Case 0
                                 salida = "nada"
                             Case 1
                                 salida = "azucar. Se lo come y sigue su camino"
-                                tablero(i, j) = 0
+                                tablero(hi, hj) = 0
                             Case 2
                                 salida = "azucar y vino. Se lo come y sigue su camino"
-                                tablero(i, j) = 0
+                                tablero(hi, hj) = 0
                                 cnte = cnte + 2
                             Case 3
                                 salida = "azucar y veneno. No se lo come"
 
                         End Select
-                        MessageBox.Show("La hormiga da un paso a abajo y se encuentra... " + salida)
+                        MessageBox.Show("La hormiga da un paso a abajo y encuentra... " + salida)
 
                     Case 3
-                        j = j - 1
+                        hj = hj - 1
 
-                        If j < 0 Then
-                            j = 10
+                        If hj < 0 Then
+                            hj = 10
                         End If
-                        Select Case tablero(i, j)
+                        Select Case tablero(hi, hj)
                             Case 0
                                 salida = "nada"
                             Case 1
                                 salida = "azucar. Se lo come y sigue su camino"
-                                tablero(i, j) = 0
+                                tablero(hi, hj) = 0
                             Case 2
                                 salida = "azucar y vino. Se lo come y sigue su camino"
-                                tablero(i, j) = 0
+                                tablero(hi, hj) = 0
                                 cnte = cnte + 2
                             Case 3
                                 salida = "azucar y veneno. No se lo come"
 
                         End Select
-                        MessageBox.Show("La hormiga da un paso a la izquierda y se encuentra..." + salida)
+                        MessageBox.Show("La hormiga da un paso a la izquierda y encuentra..." + salida)
                     Case 4
-                        j = j + 1
+                        hj = hj + 1
 
-                        j = j Mod 11
-                        Select Case tablero(i, j)
+                        hj = hj Mod 11
+                        Select Case tablero(hi, hj)
                             Case 0
                                 salida = "nada"
                             Case 1
                                 salida = "azucar. Se lo come y sigue su camino"
-                                tablero(i, j) = 0
+                                tablero(hi, hj) = 0
                             Case 2
                                 salida = "azucar y vino. Se lo come y sigue su camino"
-                                tablero(i, j) = 0
+                                tablero(hi, hj) = 0
                                 cnte = cnte + 2
                             Case 3
                                 salida = "azucar y veneno. No se lo come"
 
                         End Select
-                        MessageBox.Show("La hormiga da un paso a la derecha y se encuentra ..." + salida)
+                        MessageBox.Show("La hormiga da un paso a la derecha y encuentra ..." + salida)
                 End Select
+                recorrido(hi, hj) = "@"
             End If
         Loop
-        For i = 0 To 10
-            For j = 0 To 10
-                salida = salida + tablero(i, j).ToString + "  "
+        salida = " "
+        Me.imprimir()
+
+    End Sub
+
+
+
+    Private Sub imprimir()
+        For hi = 0 To 10
+            For hj = 0 To 10
+                rsalida = rsalida + recorrido(hi, hj).ToString + " "
+
             Next
-            salida = salida + vbNewLine
+            rsalida = rsalida + vbNewLine
         Next
-        MessageBox.Show(salida)
+        MessageBox.Show(rsalida)
+
+    End Sub
+
+    Private Sub paseo()
+        For hi = 0 To 10
+            For hj = 0 To 10
+                recorrido(hi, hj) = "# "
+            Next
+        Next
     End Sub
 
 End Class

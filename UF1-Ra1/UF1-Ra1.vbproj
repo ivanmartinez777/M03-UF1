@@ -345,6 +345,12 @@
     <Compile Include="Aleatorio.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="p.Ariadna.Designer.vb">
+      <DependentUpon>p.Ariadna.vb</DependentUpon>
+    </Compile>
+    <Compile Include="p.Ariadna.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="piramedes.Designer.vb">
       <DependentUpon>piramedes.vb</DependentUpon>
     </Compile>
@@ -539,6 +545,9 @@
     <EmbeddedResource Include="Aleatorio.resx">
       <DependentUpon>Aleatorio.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="p.Ariadna.resx">
+      <DependentUpon>p.Ariadna.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="piramedes.resx">
       <DependentUpon>piramedes.vb</DependentUpon>
     </EmbeddedResource>
@@ -578,6 +587,17 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="p.Ari">
+      <SubType>Form</SubType>
+    </None>
+    <None Include="p.Aria">
+      <SubType>Form</SubType>
+    </None>
+    <None Include="p.Designer.Ari" />
+    <None Include="p.Designer.Aria" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TextFile1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
