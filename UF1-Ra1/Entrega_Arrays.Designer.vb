@@ -41,7 +41,6 @@ Partial Class Entrega_Arrays
         Me.Ejercicio17 = New System.Windows.Forms.Button()
         Me.Ejercicio18 = New System.Windows.Forms.Button()
         Me.Ejercicio19 = New System.Windows.Forms.Button()
-        Me.Ejercicio20 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -211,19 +210,10 @@ Partial Class Entrega_Arrays
         '
         Me.Ejercicio19.Location = New System.Drawing.Point(167, 270)
         Me.Ejercicio19.Name = "Ejercicio19"
-        Me.Ejercicio19.Size = New System.Drawing.Size(75, 18)
+        Me.Ejercicio19.Size = New System.Drawing.Size(75, 23)
         Me.Ejercicio19.TabIndex = 20
         Me.Ejercicio19.Text = "Ejercicio 19"
         Me.Ejercicio19.UseVisualStyleBackColor = True
-        '
-        'Ejercicio20
-        '
-        Me.Ejercicio20.Location = New System.Drawing.Point(167, 294)
-        Me.Ejercicio20.Name = "Ejercicio20"
-        Me.Ejercicio20.Size = New System.Drawing.Size(75, 23)
-        Me.Ejercicio20.TabIndex = 21
-        Me.Ejercicio20.Text = "Ejercicio 20"
-        Me.Ejercicio20.UseVisualStyleBackColor = True
         '
         'Button1
         '
@@ -240,7 +230,6 @@ Partial Class Entrega_Arrays
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 329)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Ejercicio20)
         Me.Controls.Add(Me.Ejercicio19)
         Me.Controls.Add(Me.Ejercicio18)
         Me.Controls.Add(Me.Ejercicio17)
@@ -285,6 +274,5 @@ Partial Class Entrega_Arrays
     Friend WithEvents Ejercicio17 As Button
     Friend WithEvents Ejercicio18 As Button
     Friend WithEvents Ejercicio19 As Button
-    Friend WithEvents Ejercicio20 As Button
     Friend WithEvents Button1 As Button
 End Class

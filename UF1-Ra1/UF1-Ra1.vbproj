@@ -192,6 +192,12 @@
     <Compile Include="Ejercicio1.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Ejercicio20Hormiga.Designer.vb">
+      <DependentUpon>Ejercicio20Hormiga.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicio20Hormiga.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Ejercicio_11.Designer.vb">
       <DependentUpon>Ejercicio_11.vb</DependentUpon>
     </Compile>
@@ -469,6 +475,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ejercicio1.resx">
       <DependentUpon>Ejercicio1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ejercicio20Hormiga.resx">
+      <DependentUpon>Ejercicio20Hormiga.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ejercicio_11.resx">
       <DependentUpon>Ejercicio_11.vb</DependentUpon>
