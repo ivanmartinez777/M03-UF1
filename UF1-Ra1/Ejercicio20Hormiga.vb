@@ -1,11 +1,11 @@
 ﻿Public Class Ejercicio20Hormiga
 
     Dim salida As String = " "
-        Dim hi, hj As Integer
-        Dim tablero(10, 10) As Integer
-        Dim recorrido(10, 10) As String
-        Dim rsalida As String = " "
-        Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Dim hi, hj As Integer
+    Dim tablero(10, 10) As Integer
+    Dim recorrido(10, 10) As String
+    Dim rsalida As String = " "
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim np As Integer
         Dim r As New Random
         Dim i, j As Integer
@@ -48,7 +48,10 @@
 
 
         Do
-            MessageBox.Show("hi = " + hi.ToString + "  hj = " + hj.ToString)
+            i = hi
+            j = hj
+            Me.imprimir()
+            rsalida = ""
 
             If cnte > 0 Then
                 MessageBox.Show("Vaya pedo lleva la hormiga. Le quedan " + cnte.ToString + " pasos para volver en si")
@@ -236,15 +239,15 @@
         Loop
         salida = " "
         Me.imprimir()
-
+        rsalida = ""
     End Sub
 
 
 
     Private Sub imprimir()
-        For hi = 0 To 10
-            For hj = 0 To 10
-                rsalida = rsalida + recorrido(hi, hj).ToString + " "
+        For i = 0 To 10
+            For j = 0 To 10
+                rsalida = rsalida + recorrido(i, j).ToString + " "
 
             Next
             rsalida = rsalida + vbNewLine

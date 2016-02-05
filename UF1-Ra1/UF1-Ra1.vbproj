@@ -96,42 +96,6 @@
     <Compile Include="Arrays_Notas1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Boletin 6.Designer.vb">
-      <DependentUpon>Boletin 6.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Boletin 6.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Boletin5.Designer.vb">
-      <DependentUpon>Boletin5.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Boletin5.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Boletin6_1.Designer.vb">
-      <DependentUpon>Boletin6_1.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Boletin6_1.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Boletin7vb.Designer.vb">
-      <DependentUpon>Boletin7vb.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Boletin7vb.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Boletin_2.Designer.vb">
-      <DependentUpon>Boletin_2.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Boletin_2.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Boletin_3.Designer.vb">
-      <DependentUpon>Boletin_3.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Boletin_3.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Booleano3.Designer.vb">
       <DependentUpon>Booleano3.vb</DependentUpon>
     </Compile>
@@ -162,28 +126,10 @@
     <Compile Include="Digitos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="E-9.Designer.vb">
-      <DependentUpon>E-9.vb</DependentUpon>
-    </Compile>
-    <Compile Include="E-9.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="EjemploArraydosdimensiones.Designer.vb">
       <DependentUpon>EjemploArraydosdimensiones.vb</DependentUpon>
     </Compile>
     <Compile Include="EjemploArraydosdimensiones.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ejercicio 12.Designer.vb">
-      <DependentUpon>Ejercicio 12.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Ejercicio 12.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ejercicio 9.Designer.vb">
-      <DependentUpon>Ejercicio 9.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Ejercicio 9.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ejercicio1.Designer.vb">
@@ -198,90 +144,6 @@
     <Compile Include="Ejercicio20Hormiga.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ejercicio_11.Designer.vb">
-      <DependentUpon>Ejercicio_11.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Ejercicio_11.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ejercicio_14.Designer.vb">
-      <DependentUpon>Ejercicio_14.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Ejercicio_14.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ejercicio_15.Designer.vb">
-      <DependentUpon>Ejercicio_15.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Ejercicio_15.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ejercicio_16.Designer.vb">
-      <DependentUpon>ejercicio_16.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ejercicio_16.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ejercicio_17.Designer.vb">
-      <DependentUpon>Ejercicio_17.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Ejercicio_17.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ejercicio_18.Designer.vb">
-      <DependentUpon>Ejercicio_18.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Ejercicio_18.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ejercicio_19.Designer.vb">
-      <DependentUpon>Ejercicio_19.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Ejercicio_19.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ejercicio_2.Designer.vb">
-      <DependentUpon>Ejercicio_2.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Ejercicio_2.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ejercicio_3.Designer.vb">
-      <DependentUpon>Ejercicio_3.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Ejercicio_3.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ejercicio_4.Designer.vb">
-      <DependentUpon>Ejercicio_4.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Ejercicio_4.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ejercicio_5.Designer.vb">
-      <DependentUpon>Ejercicio_5.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Ejercicio_5.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ejercicio_6.Designer.vb">
-      <DependentUpon>Ejercicio_6.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Ejercicio_6.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ejercicio_7.Designer.vb">
-      <DependentUpon>Ejercicio_7.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Ejercicio_7.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ejercicio_8.Designer.vb">
-      <DependentUpon>Ejercicio_8.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Ejercicio_8.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Entrega_Arrays.Designer.vb">
       <DependentUpon>Entrega_Arrays.vb</DependentUpon>
     </Compile>
@@ -294,22 +156,22 @@
     <Compile Include="EstaArray.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Examen.Designer.vb">
+      <DependentUpon>Examen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Examen.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Factorizacion.Designer.vb">
       <DependentUpon>Factorizacion.vb</DependentUpon>
     </Compile>
     <Compile Include="Factorizacion.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.vb">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <Compile Include="fibo.Designer.vb">
+      <DependentUpon>fibo.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form2.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="hormiga.Designer.vb">
-      <DependentUpon>hormiga.vb</DependentUpon>
-    </Compile>
-    <Compile Include="hormiga.vb">
+    <Compile Include="fibo.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="IntroducciónYMenor.Designer.vb">
@@ -345,16 +207,10 @@
     <Compile Include="Ordenaymuestra.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Aleatorio.Designer.vb">
-      <DependentUpon>Aleatorio.vb</DependentUpon>
+    <Compile Include="p1.Designer.vb">
+      <DependentUpon>p1.vb</DependentUpon>
     </Compile>
-    <Compile Include="Aleatorio.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="p.Ariadna.Designer.vb">
-      <DependentUpon>p.Ariadna.vb</DependentUpon>
-    </Compile>
-    <Compile Include="p.Ariadna.vb">
+    <Compile Include="p1.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="piramedes.Designer.vb">
@@ -379,12 +235,6 @@
       <DependentUpon>Repaso_1.vb</DependentUpon>
     </Compile>
     <Compile Include="Repaso_1.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Repaso_2.Designer.vb">
-      <DependentUpon>Repaso_2.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Repaso_2.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="suma100.Designer.vb">
@@ -431,24 +281,6 @@
     <EmbeddedResource Include="Arrays_Notas1.resx">
       <DependentUpon>Arrays_Notas1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Boletin 6.resx">
-      <DependentUpon>Boletin 6.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Boletin5.resx">
-      <DependentUpon>Boletin5.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Boletin6_1.resx">
-      <DependentUpon>Boletin6_1.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Boletin7vb.resx">
-      <DependentUpon>Boletin7vb.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Boletin_2.resx">
-      <DependentUpon>Boletin_2.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Boletin_3.resx">
-      <DependentUpon>Boletin_3.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Booleano3.resx">
       <DependentUpon>Booleano3.vb</DependentUpon>
     </EmbeddedResource>
@@ -464,14 +296,8 @@
     <EmbeddedResource Include="Digitos.resx">
       <DependentUpon>Digitos.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="E-9.resx">
-      <DependentUpon>E-9.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="EjemploArraydosdimensiones.resx">
       <DependentUpon>EjemploArraydosdimensiones.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ejercicio 12.resx">
-      <DependentUpon>Ejercicio 12.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ejercicio1.resx">
       <DependentUpon>Ejercicio1.vb</DependentUpon>
@@ -479,62 +305,20 @@
     <EmbeddedResource Include="Ejercicio20Hormiga.resx">
       <DependentUpon>Ejercicio20Hormiga.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ejercicio_11.resx">
-      <DependentUpon>Ejercicio_11.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ejercicio_14.resx">
-      <DependentUpon>Ejercicio_14.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ejercicio_15.resx">
-      <DependentUpon>Ejercicio_15.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ejercicio_16.resx">
-      <DependentUpon>ejercicio_16.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ejercicio_17.resx">
-      <DependentUpon>Ejercicio_17.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ejercicio_18.resx">
-      <DependentUpon>Ejercicio_18.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ejercicio_19.resx">
-      <DependentUpon>Ejercicio_19.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ejercicio_2.resx">
-      <DependentUpon>Ejercicio_2.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ejercicio_3.resx">
-      <DependentUpon>Ejercicio_3.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ejercicio_4.resx">
-      <DependentUpon>Ejercicio_4.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ejercicio_5.resx">
-      <DependentUpon>Ejercicio_5.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ejercicio_6.resx">
-      <DependentUpon>Ejercicio_6.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ejercicio_7.resx">
-      <DependentUpon>Ejercicio_7.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ejercicio_8.resx">
-      <DependentUpon>Ejercicio_8.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Entrega_Arrays.resx">
       <DependentUpon>Entrega_Arrays.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EstaArray.resx">
       <DependentUpon>EstaArray.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Examen.resx">
+      <DependentUpon>Examen.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Factorizacion.resx">
       <DependentUpon>Factorizacion.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="hormiga.resx">
-      <DependentUpon>hormiga.vb</DependentUpon>
+    <EmbeddedResource Include="fibo.resx">
+      <DependentUpon>fibo.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IntroducciónYMenor.resx">
       <DependentUpon>IntroducciónYMenor.vb</DependentUpon>
@@ -551,11 +335,8 @@
     <EmbeddedResource Include="Ordenaymuestra.resx">
       <DependentUpon>Ordenaymuestra.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Aleatorio.resx">
-      <DependentUpon>Aleatorio.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="p.Ariadna.resx">
-      <DependentUpon>p.Ariadna.vb</DependentUpon>
+    <EmbeddedResource Include="p1.resx">
+      <DependentUpon>p1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="piramedes.resx">
       <DependentUpon>piramedes.vb</DependentUpon>
@@ -596,14 +377,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-    <None Include="p.Ari">
-      <SubType>Form</SubType>
-    </None>
-    <None Include="p.Aria">
-      <SubType>Form</SubType>
-    </None>
-    <None Include="p.Designer.Ari" />
-    <None Include="p.Designer.Aria" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="TextFile1.txt" />
