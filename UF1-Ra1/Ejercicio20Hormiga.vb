@@ -76,7 +76,8 @@
                                 tablero(hi, hj) = 0
                                 cnte = cnte + 2
                             Case 3
-                                MessageBox.Show("La hormiga borracha, ha comido veneno. R.I.P hormiga")
+                                MessageBox.Show("La hormiga borracha ha dado un paso arriba y ha comido veneno. R.I.P hormiga")
+                                recorrido(hi, hj) = "+"
                                 Exit Do
 
                         End Select
@@ -96,7 +97,8 @@
                                 cnte = cnte + 2
                                 tablero(hi, hj) = 0
                             Case 3
-                                MessageBox.Show("La hormiga borracha, ha comido veneno. R.I.P hormiga")
+                                MessageBox.Show("La hormiga borracha ha dado un paso abajo y ha comido veneno. R.I.P hormiga")
+                                recorrido(hi, hj) = "+"
                                 Exit Do
 
                         End Select
@@ -119,7 +121,8 @@
                                 cnte = cnte + 2
                                 tablero(hi, hj) = 0
                             Case 3
-                                MessageBox.Show("La hormiga borracha, ha comido veneno. R.I.P hormiga")
+                                MessageBox.Show("La hormiga borracha ha dado un paso a la izquierda y ha comido veneno. R.I.P hormiga")
+                                recorrido(hi, hj) = "+"
                                 Exit Do
 
                         End Select
@@ -139,7 +142,8 @@
                                 cnte = cnte + 2
                                 tablero(hi, hj) = 0
                             Case 3
-                                MessageBox.Show("La hormiga borracha, ha comido veneno. R.I.P hormiga")
+                                MessageBox.Show("La hormiga borracha ha dado un paso a la derecha y ha comido veneno. R.I.P hormiga")
+                                recorrido(hi, hj) = "+"
                                 Exit Do
 
                         End Select
