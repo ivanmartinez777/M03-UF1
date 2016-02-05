@@ -235,10 +235,11 @@
 
         min = vector(0)
 
-        For cnt = 1 To 9
-            If vector(cnt) < min Then
+        For cnt = 0 To 9
+            If vector(cnt) <= min Then
                 min = vector(cnt)
                 indice = (cnt)
+
             End If
         Next
         MessageBox.Show(salida + " La posicion del indice más pequeño es  " + indice.ToString)

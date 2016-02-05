@@ -50,7 +50,7 @@
         Do
             i = hi
             j = hj
-            Me.imprimir()
+            MessageBox.Show(Me.imprimir)
             rsalida = ""
 
             If cnte > 0 Then
@@ -242,13 +242,13 @@
             End If
         Loop
         salida = " "
-        Me.imprimir()
+        MessageBox.Show(Me.imprimir)
         rsalida = ""
     End Sub
 
 
 
-    Private Sub imprimir()
+    Private Function imprimir() As String
         For i = 0 To 10
             For j = 0 To 10
                 rsalida = rsalida + recorrido(i, j).ToString + " "
@@ -256,9 +256,9 @@
             Next
             rsalida = rsalida + vbNewLine
         Next
-        MessageBox.Show(rsalida)
+        Return rsalida
 
-    End Sub
+    End Function
 
     Private Sub paseo()
         For hi = 0 To 10
