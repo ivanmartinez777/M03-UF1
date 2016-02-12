@@ -225,6 +225,12 @@
     <Compile Include="PosicionArray.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="preparación.Designer.vb">
+      <DependentUpon>preparación.vb</DependentUpon>
+    </Compile>
+    <Compile Include="preparación.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="prueba.Designer.vb">
       <DependentUpon>prueba.vb</DependentUpon>
     </Compile>
@@ -343,6 +349,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PosicionArray.resx">
       <DependentUpon>PosicionArray.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="preparación.resx">
+      <DependentUpon>preparación.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="prueba.resx">
       <DependentUpon>prueba.vb</DependentUpon>

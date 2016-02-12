@@ -352,7 +352,7 @@
 
     Private Sub Ejercicio4_Click(sender As Object, e As EventArgs) Handles Ejercicio4.Click
         Dim origen() As Integer = {1, 4, 10, 32, 60, 91, 34, 56, 73, 88, 86}
-        Dim destino(9) As Integer
+        Dim destino(10) As Integer
         Dim cnt As Integer
         Dim conta As Integer = 0
         Dim salida As String = " "
@@ -364,7 +364,7 @@
 
         destino(conta) = 0
         For cnt = 0 To 10
-            If origen(cnt) > 25 Then
+            If origen(cnt) > 25 And origen(cnt) Mod 2 = 0 Then
                 destino(conta) = origen(cnt)
                 salidades = salidades + destino(conta).ToString + " "
                 conta = conta + 1
