@@ -90,6 +90,12 @@
     <Compile Include="AdivinarUnNumero2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Ari.Designer.vb">
+      <DependentUpon>Ari.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ari.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Arrays_Notas1.Designer.vb">
       <DependentUpon>Arrays_Notas1.vb</DependentUpon>
     </Compile>
@@ -106,6 +112,12 @@
       <DependentUpon>Bucles_pares.vb</DependentUpon>
     </Compile>
     <Compile Include="Bucles_pares.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculadora_nueva.Designer.vb">
+      <DependentUpon>Calculadora_nueva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Calculadora_nueva.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CalculoDeLaMedia.Designer.vb">
@@ -148,6 +160,12 @@
       <DependentUpon>Entrega_Arrays.vb</DependentUpon>
     </Compile>
     <Compile Include="Entrega_Arrays.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="esc.Designer.vb">
+      <DependentUpon>esc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="esc.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EstaArray.Designer.vb">
@@ -284,6 +302,9 @@
     <EmbeddedResource Include="AdivinarUnNumero2.resx">
       <DependentUpon>AdivinarUnNumero2.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ari.resx">
+      <DependentUpon>Ari.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Arrays_Notas1.resx">
       <DependentUpon>Arrays_Notas1.vb</DependentUpon>
     </EmbeddedResource>
@@ -292,6 +313,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Bucles_pares.resx">
       <DependentUpon>Bucles_pares.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculadora_nueva.resx">
+      <DependentUpon>Calculadora_nueva.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CalculoDeLaMedia.resx">
       <DependentUpon>CalculoDeLaMedia.vb</DependentUpon>
@@ -313,6 +337,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Entrega_Arrays.resx">
       <DependentUpon>Entrega_Arrays.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="esc.resx">
+      <DependentUpon>esc.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EstaArray.resx">
       <DependentUpon>EstaArray.vb</DependentUpon>
