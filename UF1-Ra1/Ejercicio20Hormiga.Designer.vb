@@ -38,7 +38,7 @@ Partial Class Ejercicio20Hormiga
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(252, 211)
+        Me.ClientSize = New System.Drawing.Size(192, 211)
         Me.Controls.Add(Me.Button1)
         Me.Name = "Ejercicio20Hormiga"
         Me.Text = "Ejercicio20Hormiga"

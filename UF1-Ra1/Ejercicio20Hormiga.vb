@@ -260,6 +260,10 @@
 
     End Function
 
+    Private Sub ListView1_SelectedIndexChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
     Private Sub paseo()
         For hi = 0 To 10
             For hj = 0 To 10
