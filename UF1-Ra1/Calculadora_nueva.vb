@@ -1,9 +1,10 @@
 ﻿Public Class Calculadora_nueva
-    Dim n1 As Integer
-    Dim n2 As Integer
+    Dim n1 As Double
+    Dim n2 As Double
     Dim salida As String
-    Dim resultado As Integer
+    Dim resultado As Double
     Dim operacion As Integer
+    Dim dec As Integer = 0
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         salida = salida + "1"
@@ -16,15 +17,15 @@
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        n1 = CInt(salida)
+        n1 = CDbl(salida)
         operacion = 1
         salida = ""
-
+        dec = 0
 
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        n2 = CInt(salida)
+        n2 = CDbl(salida)
         Select Case operacion
             Case 1
                 resultado = n1 + n2
@@ -41,6 +42,7 @@
         End Select
         salida = resultado.ToString
         Label1.Text = resultado.ToString
+        dec = 0
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
@@ -84,21 +86,24 @@
     End Sub
 
     Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
-        n1 = CInt(salida)
+        n1 = CDbl(salida)
         operacion = 2
         salida = ""
+        dec = 0
     End Sub
 
     Private Sub Button15_Click(sender As Object, e As EventArgs) Handles Button15.Click
-        n1 = CInt(salida)
+        n1 = CDbl(salida)
         operacion = 3
         salida = ""
+        dec = 0
     End Sub
 
     Private Sub Button16_Click(sender As Object, e As EventArgs) Handles Button16.Click
-        n1 = CInt(salida)
+        n1 = CDbl(salida)
         operacion = 4
         salida = ""
+        dec = 0
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
@@ -112,15 +117,25 @@
 
     Private Sub Button17_Click(sender As Object, e As EventArgs) Handles Button17.Click
 
-        n1 = CInt(salida)
+        n1 = CDbl(salida)
         resultado = n1 ^ 2
+        dec = 0
 
         salida = resultado.ToString
     End Sub
 
     Private Sub Button18_Click(sender As Object, e As EventArgs) Handles Button18.Click
-        n1 = CInt(salida)
+        n1 = CDbl(salida)
         operacion = 6
         salida = ""
+        dec = 0
+    End Sub
+
+    Private Sub Button19_Click(sender As Object, e As EventArgs) Handles Button19.Click
+        If dec = 0 Then
+            salida = salida + ","
+            Label1.Text = salida
+        End If
+        dec = 1
     End Sub
 End Class

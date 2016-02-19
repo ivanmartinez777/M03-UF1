@@ -41,16 +41,17 @@ Partial Class Calculadora_nueva
         Me.Button16 = New System.Windows.Forms.Button()
         Me.Button17 = New System.Windows.Forms.Button()
         Me.Button18 = New System.Windows.Forms.Button()
+        Me.Button19 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(37, 18)
+        Me.Label1.Location = New System.Drawing.Point(34, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
+        Me.Label1.Size = New System.Drawing.Size(13, 13)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Label1"
+        Me.Label1.Text = "0"
         '
         'Button1
         '
@@ -214,11 +215,21 @@ Partial Class Calculadora_nueva
         Me.Button18.Text = "x ^ y"
         Me.Button18.UseVisualStyleBackColor = True
         '
+        'Button19
+        '
+        Me.Button19.Location = New System.Drawing.Point(22, 162)
+        Me.Button19.Name = "Button19"
+        Me.Button19.Size = New System.Drawing.Size(25, 23)
+        Me.Button19.TabIndex = 19
+        Me.Button19.Text = ","
+        Me.Button19.UseVisualStyleBackColor = True
+        '
         'Calculadora_nueva
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.Controls.Add(Me.Button19)
         Me.Controls.Add(Me.Button18)
         Me.Controls.Add(Me.Button17)
         Me.Controls.Add(Me.Button16)
@@ -264,4 +275,5 @@ Partial Class Calculadora_nueva
     Friend WithEvents Button16 As Button
     Friend WithEvents Button17 As Button
     Friend WithEvents Button18 As Button
+    Friend WithEvents Button19 As Button
 End Class
