@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Ari
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,9 +20,8 @@ Partial Class Ari
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.pantalla = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -38,16 +37,9 @@ Partial Class Ari
         Me.Button13 = New System.Windows.Forms.Button()
         Me.Button14 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button15 = New System.Windows.Forms.Button()
+        Me.pantalla = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
-        '
-        'pantalla
-        '
-        Me.pantalla.AutoSize = True
-        Me.pantalla.Location = New System.Drawing.Point(480, 9)
-        Me.pantalla.Name = "pantalla"
-        Me.pantalla.Size = New System.Drawing.Size(13, 13)
-        Me.pantalla.TabIndex = 0
-        Me.pantalla.Text = "0"
         '
         'Button1
         '
@@ -184,11 +176,30 @@ Partial Class Ari
         Me.Label1.TabIndex = 15
         Me.Label1.Text = "Motivació"
         '
+        'Button15
+        '
+        Me.Button15.Location = New System.Drawing.Point(12, 41)
+        Me.Button15.Name = "Button15"
+        Me.Button15.Size = New System.Drawing.Size(75, 23)
+        Me.Button15.TabIndex = 16
+        Me.Button15.Text = "Nombre"
+        Me.Button15.UseVisualStyleBackColor = True
+        '
+        'pantalla
+        '
+        Me.pantalla.Location = New System.Drawing.Point(492, 12)
+        Me.pantalla.Multiline = True
+        Me.pantalla.Name = "pantalla"
+        Me.pantalla.Size = New System.Drawing.Size(460, 500)
+        Me.pantalla.TabIndex = 17
+        '
         'Ari
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(964, 741)
+        Me.ClientSize = New System.Drawing.Size(964, 733)
+        Me.Controls.Add(Me.pantalla)
+        Me.Controls.Add(Me.Button15)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button14)
         Me.Controls.Add(Me.Button13)
@@ -204,15 +215,12 @@ Partial Class Ari
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.pantalla)
         Me.Name = "Ari"
         Me.Text = "Ari"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents pantalla As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
@@ -228,4 +236,6 @@ Partial Class Ari
     Friend WithEvents Button13 As Button
     Friend WithEvents Button14 As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents Button15 As Button
+    Friend WithEvents pantalla As TextBox
 End Class

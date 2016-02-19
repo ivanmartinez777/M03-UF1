@@ -225,6 +225,12 @@
     <Compile Include="Ordenaymuestra.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="p.a.Designer.vb">
+      <DependentUpon>p.a.vb</DependentUpon>
+    </Compile>
+    <Compile Include="p.a.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="p1.Designer.vb">
       <DependentUpon>p1.vb</DependentUpon>
     </Compile>
@@ -367,6 +373,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ordenaymuestra.resx">
       <DependentUpon>Ordenaymuestra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="p.a.resx">
+      <DependentUpon>p.a.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="p1.resx">
       <DependentUpon>p1.vb</DependentUpon>

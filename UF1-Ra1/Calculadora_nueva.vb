@@ -41,7 +41,7 @@
                 resultado = n1 ^ n2
         End Select
         salida = resultado.ToString
-        Label1.Text = resultado.ToString
+        Label1.Text = salida.ToString
         dec = 0
     End Sub
 
@@ -137,5 +137,9 @@
             Label1.Text = salida
         End If
         dec = 1
+    End Sub
+
+    Private Sub Calculadora_nueva_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

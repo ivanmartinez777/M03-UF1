@@ -1,14 +1,14 @@
 ﻿Public Class Ari
     Dim salida As String
     Dim com As String = ""
-
+    Dim nombre As String
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        salida = salida + "Ve molt motivada a classe ï aquesta és una actitud que es manté sessió rere sessió. "
+        salida = salida + nombre + " ve molt motivada a classe ï aquesta és una actitud que es manté sessió rere sessió. "
         pantalla.Text = salida
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        salida = salida + "Mostra un gran interès durant l'estona del conte, l'escolta amb gran atenció i pren part de
+        salida = salida + nombre + " mostra un gran interès durant l'estona del conte, l'escolta amb gran atenció i pren part de
 l'explicació. Això prova que escolta el CD regularment ja que aconsegueix reproduir parts de la
 història. "
         pantalla.Text = salida
@@ -27,9 +27,6 @@ història. "
     Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
         salida = salida + vbNewLine
     End Sub
-
-
-
     Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
         com = InputBox("comente")
         salida = salida + com
@@ -41,7 +38,7 @@ història. "
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        salida = salida + "S'evidencia que passa una molt bona estona amb les activitats de grup. "
+        salida = salida + "S'evidencia que " + nombre + " passa una molt bona estona amb les activitats de grup. "
         pantalla.Text = salida
     End Sub
 
@@ -67,7 +64,7 @@ símptoma d'avorriment o disconformitat. "
     End Sub
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
-        salida = salida + "Sempre arriba a classe contenta i amb ganes de treballar. "
+        salida = salida + nombre + " sempre arriba a classe contenta i amb ganes de treballar. "
         pantalla.Text = salida
     End Sub
 
@@ -76,4 +73,10 @@ símptoma d'avorriment o disconformitat. "
 se li ha proposat. "
         pantalla.Text = salida
     End Sub
+
+    Private Sub Button15_Click(sender As Object, e As EventArgs) Handles Button15.Click
+        nombre = InputBox("introduce el nombre")
+    End Sub
+
+
 End Class
