@@ -114,6 +114,12 @@
     <Compile Include="Bucles_pares.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="calculadora_metodo.Designer.vb">
+      <DependentUpon>calculadora_metodo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="calculadora_metodo.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Calculadora_nueva.Designer.vb">
       <DependentUpon>Calculadora_nueva.vb</DependentUpon>
     </Compile>
@@ -202,6 +208,12 @@
       <DependentUpon>IntroducirNumeroParOImpar.vb</DependentUpon>
     </Compile>
     <Compile Include="IntroducirNumeroParOImpar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos y funciones.Designer.vb">
+      <DependentUpon>Metodos y funciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos y funciones.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -320,6 +332,9 @@
     <EmbeddedResource Include="Bucles_pares.resx">
       <DependentUpon>Bucles_pares.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="calculadora_metodo.resx">
+      <DependentUpon>calculadora_metodo.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Calculadora_nueva.resx">
       <DependentUpon>Calculadora_nueva.vb</DependentUpon>
     </EmbeddedResource>
@@ -364,6 +379,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IntroducirNumeroParOImpar.resx">
       <DependentUpon>IntroducirNumeroParOImpar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos y funciones.resx">
+      <DependentUpon>Metodos y funciones.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
