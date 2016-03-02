@@ -46,6 +46,7 @@ Partial Class Venta_fruta
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'numero1
@@ -250,11 +251,21 @@ Partial Class Venta_fruta
         Me.Label16.TabIndex = 23
         Me.Label16.Text = "Num/Kg"
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(341, 201)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 24
+        Me.Button2.Text = "salir"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'Venta_fruta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(690, 354)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label14)
@@ -310,4 +321,5 @@ Partial Class Venta_fruta
     Friend WithEvents Label14 As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents Label16 As Label
+    Friend WithEvents Button2 As Button
 End Class

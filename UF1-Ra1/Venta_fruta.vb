@@ -1,9 +1,7 @@
 ﻿Public Class Venta_fruta
     Dim total As Double = 400
-    Dim n1 As Double
     Const precio As Double = 7.5
     Dim stock As Double = 40
-    Dim n2 As Double
     Const precio2 As Double = 8.5
     Dim stock2 As Double = 40
     Dim parcial As Double
@@ -23,6 +21,7 @@
 
         numero1.Text = 0
         numero2.Text = 0
+        numero3.Text = 0
         efectivot.Text = 0
 
     End Sub
@@ -93,10 +92,10 @@
             End If
         End If
         If IsNumeric(numero2.Text) Then
-            Label3.Text = stock - numero2.Text
+            Label3.Text = stock2 - numero2.Text
         ElseIf (numero2.Text) = "" Then
 
-            Label3.Text = stock - 0
+            Label3.Text = stock2 - 0
         End If
     End Sub
     Private Sub Venta_fruta_Load(sender As Object, e As EventArgs) Handles Me.Load
@@ -122,15 +121,18 @@
             ElseIf IsNumeric(numero3.Text) Then
                 TextBox1.Text = numero3.Text * precio3
             Else
-                TextBox1.Text = 0 + numero3.Text * precio3
+                TextBox1.Text = 0 + (numero3.Text * precio3)
             End If
         End If
         If IsNumeric(numero3.Text) Then
-            Label10.Text = stock - numero3.Text
+            Label10.Text = stock3 - numero3.Text
         ElseIf (numero3.Text) = "" Then
 
-            Label10.Text = stock - 0
+            Label10.Text = stock3 - 0
         End If
     End Sub
 
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        End
+    End Sub
 End Class
