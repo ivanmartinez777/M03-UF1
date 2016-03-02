@@ -309,6 +309,12 @@
     <Compile Include="triangulo.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Venta_fruta.Designer.vb">
+      <DependentUpon>Venta_fruta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Venta_fruta.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AdivinaElNumeroProfe.resx">
@@ -427,6 +433,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="triangulo.resx">
       <DependentUpon>triangulo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta_fruta.resx">
+      <DependentUpon>Venta_fruta.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

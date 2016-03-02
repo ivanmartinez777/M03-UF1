@@ -17,11 +17,11 @@
     End Sub
 
     Public Sub resultado_TextChanged(sender As Object, e As EventArgs) Handles textbox3.TextChanged
-        textbox3.Text = Me.operacion()
+        textbox3.Text = Me.operacion(n1, n2)
+
     End Sub
 
     Public Function operacion(ByVal n1 As Integer, n2 As Integer) As Integer
-
         Select Case oper
             Case 1
                 Return n1 + n2
