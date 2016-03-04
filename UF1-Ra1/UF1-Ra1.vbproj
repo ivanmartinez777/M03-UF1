@@ -132,6 +132,12 @@
     <Compile Include="CalculoDeLaMedia.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="calculo_mental.Designer.vb">
+      <DependentUpon>calculo_mental.vb</DependentUpon>
+    </Compile>
+    <Compile Include="calculo_mental.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="cuadrado.Designer.vb">
       <DependentUpon>cuadrado.vb</DependentUpon>
     </Compile>
@@ -249,6 +255,12 @@
     <Compile Include="p1.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="p2.Designer.vb">
+      <DependentUpon>p2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="p2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="piramedes.Designer.vb">
       <DependentUpon>piramedes.vb</DependentUpon>
     </Compile>
@@ -347,6 +359,9 @@
     <EmbeddedResource Include="CalculoDeLaMedia.resx">
       <DependentUpon>CalculoDeLaMedia.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="calculo_mental.resx">
+      <DependentUpon>calculo_mental.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="cuadrado.resx">
       <DependentUpon>cuadrado.vb</DependentUpon>
     </EmbeddedResource>
@@ -403,6 +418,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="p1.resx">
       <DependentUpon>p1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="p2.resx">
+      <DependentUpon>p2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="piramedes.resx">
       <DependentUpon>piramedes.vb</DependentUpon>

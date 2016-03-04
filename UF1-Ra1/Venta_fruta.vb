@@ -11,6 +11,7 @@
 
 
 
+
     Public Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         parcial = TextBox1.Text
         total = total + parcial
@@ -87,8 +88,7 @@
                 TextBox1.Text = numero2.Text * precio2 + numero3.Text * precio3
             ElseIf IsNumeric(numero2.Text) Then
                 TextBox1.Text = numero2.Text * precio2
-            Else
-                TextBox1.Text = 0 + numero2.Text * precio2
+
             End If
         End If
         If IsNumeric(numero2.Text) Then
@@ -120,8 +120,7 @@
                 TextBox1.Text = numero3.Text * precio3 + numero2.Text * precio2
             ElseIf IsNumeric(numero3.Text) Then
                 TextBox1.Text = numero3.Text * precio3
-            Else
-                TextBox1.Text = 0 + (numero3.Text * precio3)
+
             End If
         End If
         If IsNumeric(numero3.Text) Then
@@ -135,4 +134,6 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         End
     End Sub
+
+
 End Class
