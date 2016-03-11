@@ -4,12 +4,15 @@
     Dim op As Integer
     Dim op2 As Integer
     Dim pregunta As Integer
+    Dim count As Integer
 
     Dim r As New Random
     Dim juicio As Boolean
 
     Public Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
         For cnt = 0 To 4
+            count = 10
             pregunta = r.Next(1, 3)
             op = r.Next(10, 100)
 
@@ -23,17 +26,18 @@
                     TextBox1.Text = op.ToString + " - " + op2.ToString
 
 
-
-
                 Case 2
                     pregunta = op + op2
                     TextBox1.Text = op.ToString + " + " + op2.ToString
 
 
-
             End Select
-            resp = InputBox("La respuesta es")
-            Me.Button2.PerformClick()
+
+            Timer1.Start()
+
+
+
+
 
 
         Next
@@ -47,12 +51,40 @@
 
 
     Public Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        count = 1
 
-        If pregunta = resp Then
-                juicio = True
+
+
+    End Sub
+
+
+    Public Sub Timer1_Tick(ByVal sender As Object, ByVal e As System.EventArgs) Handles Timer1.Tick
+        Timer1.Enabled = True
+        count = count - 1
+        timerr1.Text = count.ToString
+
+        If count < 1 Then
+            count = 0
+            Timer1.Enabled = False
+        End If
+        If count = 0 Then
+            If TextBox2.Text = "" Then
+                resp = 0
+            Else
+                resp = TextBox2.Text
             End If
-            MessageBox.Show(juicio.ToString)
-
+            If pregunta = resp Then
+                juicio = True
+            Else
+                juicio = False
+            End If
+            If juicio = True Then
+                MessageBox.Show("tienes razón  ")
+            Else
+                MessageBox.Show("no sabes lo que dices")
+            End If
+            TextBox2.Text = ""
+        End If
 
 
     End Sub
