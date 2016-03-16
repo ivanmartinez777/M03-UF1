@@ -1,5 +1,4 @@
 ﻿Public Class calculo_mental
-    Dim cnt As Integer = 4
     Dim resp As Integer
     Dim op As Integer
     Dim op2 As Integer
@@ -46,39 +45,39 @@
 
         If count = 10 Then
 
-                pregunta = r.Next(1, 3)
+            pregunta = r.Next(1, 3)
             op = r.Next(1, 100)
 
             op2 = r.Next(1, 100)
 
             Select Case pregunta
-                    Case 1
-                        pregunta = op - op2
-                        TextBox1.Text = op.ToString + " - " + op2.ToString
+                Case 1
+                    pregunta = op - op2
+                    TextBox1.Text = op.ToString + " - " + op2.ToString
 
 
-                    Case 2
-                        pregunta = op + op2
-                        TextBox1.Text = op.ToString + " + " + op2.ToString
+                Case 2
+                    pregunta = op + op2
+                    TextBox1.Text = op.ToString + " + " + op2.ToString
 
 
-                End Select
+            End Select
 
-            End If
-            Timer1.Enabled = True
-            count = count - 1
-            timerr1.Text = count.ToString
+        End If
+        Timer1.Enabled = True
+        count = count - 1
+        timerr1.Text = count.ToString
 
-            If count < 1 Then
-                count = 0
-                Timer1.Enabled = False
-            End If
-            If count = 0 Then
+        If count < 1 Then
+            count = 0
+            Timer1.Enabled = False
+        End If
+        If count = 0 Then
             Me.recuento()
             cp = cp + 1
             TextBox2.Text = ""
-                count = 10
-            End If
+            count = 10
+        End If
 
         If cp = 5 Then
             Timer1.Enabled = False
