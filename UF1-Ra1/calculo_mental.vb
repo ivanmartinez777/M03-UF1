@@ -8,7 +8,6 @@
     Dim cp As Integer = 0
     Dim cc As Integer = 0
     Dim ci As Integer = 0
-
     Dim r As New Random
     Dim juicio As Boolean
 
@@ -18,51 +17,27 @@
             MessageBox.Show("Sólo puede seleccionar un nivel")
 
         ElseIf CheckBox1.Checked = True Then
-            Label3.Text = ""
-            TextBox3.Text = ""
-            TextBox4.Text = ""
             Timer1.Start()
             count = 10
-            CheckBox1.Visible = False
-            CheckBox2.Visible = False
-            CheckBox3.Visible = False
-            Button1.Visible = False
+            Me.comienzo()
         ElseIf CheckBox2.Checked = True Then
             Timer2.Start()
-            Label3.Text = ""
-            TextBox3.Text = ""
-            TextBox4.Text = ""
             count = 20
-            CheckBox1.Visible = False
-            CheckBox2.Visible = False
-            CheckBox3.Visible = False
-            Button1.Visible = False
+            Me.comienzo()
         ElseIf CheckBox3.Checked = True Then
-            Label3.Text = ""
-            TextBox3.Text = ""
-            TextBox4.Text = ""
             Timer3.Start()
             count = 30
-            CheckBox1.Visible = False
-            CheckBox2.Visible = False
-            CheckBox3.Visible = False
-            Button1.Visible = False
-
+            Me.comienzo()
         Else
-            MessageBox.Show("selecciona una dificultad por favor")
+            MessageBox.Show("selecciona un nivel de dificultad por favor")
         End If
 
 
 
     End Sub
 
-
-
-
     Public Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         count = 1
-
-
 
     End Sub
 
@@ -75,8 +50,6 @@
             op = r.Next(1, 100)
 
             op2 = r.Next(1, 100)
-
-
 
             Select Case pregunta
                     Case 1
@@ -101,52 +74,16 @@
                 Timer1.Enabled = False
             End If
             If count = 0 Then
-                If TextBox2.Text = "" Then
-                    resp = 0
-                Else
-                    resp = TextBox2.Text
-                End If
-                If pregunta = resp Then
-                    juicio = True
-                Else
-                    juicio = False
-                End If
-            If juicio = True Then
-
-                cc = cc + 1
-                TextBox3.Text = cc
-            Else
-
-                ci = ci + 1
-                TextBox4.Text = ci
-            End If
+            Me.recuento()
             cp = cp + 1
             TextBox2.Text = ""
                 count = 10
             End If
 
-
-
         If cp = 5 Then
-
-
-            TextBox2.Text = ""
-            TextBox1.Text = ""
             Timer1.Enabled = False
-            cp = 0
-            If ci < cc Then
-                Label3.Text = "Aprobado"
-            Else
-                Label3.Text = "Suspedido"
-            End If
-            ci = 0
-            cc = 0
-            cp = 0
 
-            CheckBox1.Visible = True
-            CheckBox2.Visible = True
-            CheckBox3.Visible = True
-            Button1.Visible = True
+            Me.sentencia()
 
         Else
             Timer1.Enabled = True
@@ -156,13 +93,7 @@
 
     End Sub
 
-    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs)
 
-    End Sub
-
-    Private Sub CheckedListBox1_SelectedIndexChanged(sender As Object, e As EventArgs)
-
-    End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
         If count = 20 Then
@@ -207,25 +138,7 @@
             Timer2.Enabled = False
         End If
         If count = 0 Then
-            If TextBox2.Text = "" Then
-                resp = 0
-            Else
-                resp = TextBox2.Text
-            End If
-            If pregunta = resp Then
-                juicio = True
-            Else
-                juicio = False
-            End If
-            If juicio = True Then
-
-                cc = cc + 1
-                TextBox3.Text = cc
-            Else
-
-                ci = ci + 1
-                TextBox4.Text = ci
-            End If
+            Me.recuento()
             cp = cp + 1
             TextBox2.Text = ""
             count = 20
@@ -234,25 +147,9 @@
 
 
         If cp = 5 Then
-
-
-            TextBox2.Text = ""
-            TextBox1.Text = ""
             Timer2.Enabled = False
-            cp = 0
-            If ci < cc Then
-                Label3.Text = "Aprobado"
-            Else
-                Label3.Text = "Suspedido"
-            End If
-            ci = 0
-            cc = 0
-            cp = 0
 
-            CheckBox1.Visible = True
-            CheckBox2.Visible = True
-            CheckBox3.Visible = True
-            Button1.Visible = True
+            Me.sentencia()
         Else
             Timer2.Enabled = True
         End If
@@ -287,7 +184,9 @@
                     Else
                         pregunta = op2 / op
                     End If
+                    TextBox1.Text = op.ToString + " / " + op2.ToString
             End Select
+
 
         End If
         Timer3.Enabled = True
@@ -299,25 +198,7 @@
             Timer3.Enabled = False
         End If
         If count = 0 Then
-            If TextBox2.Text = "" Then
-                resp = 0
-            Else
-                resp = TextBox2.Text
-            End If
-            If pregunta = resp Then
-                juicio = True
-            Else
-                juicio = False
-            End If
-            If juicio = True Then
-
-                cc = cc + 1
-                TextBox3.Text = cc
-            Else
-
-                ci = ci + 1
-                TextBox4.Text = ci
-            End If
+            Me.recuento()
             cp = cp + 1
             TextBox2.Text = ""
             count = 30
@@ -326,25 +207,8 @@
 
 
         If cp = 5 Then
-
-
-            TextBox2.Text = ""
-            TextBox1.Text = ""
             Timer3.Enabled = False
-            cp = 0
-            If ci < cc Then
-                Label3.Text = "Aprobado"
-            Else
-                Label3.Text = "Suspedido"
-            End If
-            ci = 0
-            cc = 0
-            cp = 0
-
-            CheckBox1.Visible = True
-            CheckBox2.Visible = True
-            CheckBox3.Visible = True
-            Button1.Visible = True
+            Me.sentencia()
         Else
             Timer3.Enabled = True
         End If
@@ -353,5 +217,61 @@
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         End
+    End Sub
+
+    Private Sub calculo_mental_Load(sender As Object, e As EventArgs) Handles Me.Load
+        Button2.Visible = False
+    End Sub
+    Private Sub comienzo()
+        Label3.Text = ""
+        TextBox3.Text = ""
+        TextBox4.Text = ""
+        CheckBox1.Visible = False
+        CheckBox2.Visible = False
+        CheckBox3.Visible = False
+        Button1.Visible = False
+        Button2.Visible = True
+    End Sub
+    Private Sub sentencia()
+
+        TextBox2.Text = ""
+        TextBox1.Text = ""
+
+        cp = 0
+        If ci < cc Then
+            Label3.Text = "Aprobado"
+        Else
+            Label3.Text = "Suspedido"
+        End If
+        ci = 0
+        cc = 0
+        cp = 0
+
+        CheckBox1.Visible = True
+        CheckBox2.Visible = True
+        CheckBox3.Visible = True
+        Button1.Visible = True
+        Button2.Visible = False
+    End Sub
+    Private Sub recuento()
+        If TextBox2.Text = "" Then
+            resp = 0
+        Else
+            resp = TextBox2.Text
+        End If
+        If pregunta = resp Then
+            juicio = True
+        Else
+            juicio = False
+        End If
+        If juicio = True Then
+
+            cc = cc + 1
+            TextBox3.Text = cc
+        Else
+
+            ci = ci + 1
+            TextBox4.Text = ci
+        End If
     End Sub
 End Class
