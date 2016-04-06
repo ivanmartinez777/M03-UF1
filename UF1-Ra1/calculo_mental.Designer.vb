@@ -55,6 +55,7 @@ Partial Class calculo_mental
         '
         Me.TextBox1.Location = New System.Drawing.Point(157, 156)
         Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(100, 20)
         Me.TextBox1.TabIndex = 2
         '
@@ -138,6 +139,7 @@ Partial Class calculo_mental
         '
         Me.TextBox3.Location = New System.Drawing.Point(160, 111)
         Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.ReadOnly = True
         Me.TextBox3.Size = New System.Drawing.Size(21, 20)
         Me.TextBox3.TabIndex = 11
         '
@@ -154,6 +156,7 @@ Partial Class calculo_mental
         '
         Me.TextBox4.Location = New System.Drawing.Point(251, 111)
         Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.ReadOnly = True
         Me.TextBox4.Size = New System.Drawing.Size(25, 20)
         Me.TextBox4.TabIndex = 14
         '

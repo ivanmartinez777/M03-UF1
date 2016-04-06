@@ -13,7 +13,7 @@
     Public Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
         If (CheckBox1.Checked = True And CheckBox2.Checked = True) Or (CheckBox1.Checked = True And CheckBox3.Checked = True) Or (CheckBox3.Checked = True And CheckBox2.Checked = True) Then
-            MessageBox.Show("Sólo puede seleccionar un nivel")
+            MessageBox.Show("Sólo puede seleccionarse un nivel")
 
         ElseIf CheckBox1.Checked = True Then
             Timer1.Start()
@@ -28,7 +28,7 @@
             count = 30
             Me.comienzo()
         Else
-            MessageBox.Show("selecciona un nivel de dificultad por favor")
+            MessageBox.Show("seleccione un nivel de dificultad por favor")
         End If
 
 
